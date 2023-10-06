@@ -210,6 +210,8 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 	font-size: 26px;
 	font-weight: 600;
+	max-width: 316px;
+	margin: auto;
 }
 .main__slide .main__slide-text{
 	color: #FFF;
@@ -1859,10 +1861,10 @@ input::-webkit-inner-spin-button {
 	gap: 12px;
 }
 .footer__socicial .ftr__socicial-icon{
-	transition: .5s ease-in;
+	transition: .3s ease-in;
 }
 .footer__socicial .ftr__socicial-icon:hover{
-	transform: rotate(-360deg) scale(1.1);
+	transform: scale(1.1);
 }
 .footer__content .footer__info{
 	display: flex;
