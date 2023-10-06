@@ -49,9 +49,9 @@ $(function () {
       clickable: true,
     },
     speed: 1000,
-    // autoplay: {
-    //   delay: 700,
-    // },
+    autoplay: {
+      delay: 700,
+    },
   });
 
 
@@ -60,9 +60,9 @@ $(function () {
     slidesPerView: 3.5,
     spaceBetween: 17,
     speed: 1000,
-    // autoplay: {
-    //   delay: 700,
-    // },
+    autoplay: {
+      delay: 700,
+    },
   });
 
 
