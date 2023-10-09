@@ -1627,6 +1627,7 @@ input::-webkit-inner-spin-button {
 	gap: 11px;
 	margin-bottom: 18px;
 }
+.modal__form .modal__form-wrap select,
 .modal__form .modal__form-wrap .modal__form-inp{
 	width: 100%;
 	border-radius: 60px;
