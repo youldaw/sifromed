@@ -57,7 +57,7 @@ $(function () {
 
   // Swiper2
   var swiper2 = new Swiper(".main__info-slide .mySwiper", {
-    slidesPerView: 3.5,
+    slidesPerView: 3.4,
     spaceBetween: 17,
     speed: 1000,
     autoplay: {
@@ -66,4 +66,17 @@ $(function () {
   });
 
 
+});
+
+
+// rolly js
+const r = rolly({
+  view: document.querySelector('.wrapper'),
+  native: true,
+  // other options
+});
+r.init();
+
+AOS.init({
+  duration: 1500 //global duration
 });

@@ -6,7 +6,11 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
+	<!-- rolly js | css link -->
+	<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+	<!-- aos css cdn link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -15,8 +19,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-			<div class="container">
+        <header class="header" data-scene>
+			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
 				<div class="header__nav">
 					<a href="#!" class="logo">ЦИФРОМЕД</a>
 
@@ -130,16 +134,16 @@
 
         <main>
 
-            <section class="basket">
+            <section class="basket" data-scene>
                 <div class="container">
                     <div class="basket__content">
-                        <div class="main-search">
+                        <div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
                             <button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
                                     alt=""></button>
                             <input type="search" placeholder="Исследование" class="main-search-inp">
                         </div>
 
-                        <div class="basket__box">
+                        <div class="basket__box" data-aos="zoom-out-right" data-aos="zoom-out-down" data-aos-delay="700">
                             <p class="basket__box-title">Ваша корзина:</p>
 
                             <div class="basket__box-price">
@@ -162,7 +166,7 @@
                         </div>
 
                         <div class="catolog__analiz-items">
-                            <div class="catolog__analiz-item">
+                            <div class="catolog__analiz-item" data-aos="zoom-out-left" data-aos="zoom-out-down" data-aos-delay="1000">
                                 <div class="catolog__analiz-item-info">
                                     <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
                                     <div class="catolog__analiz-price">
@@ -171,7 +175,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catolog__analiz-item">
+                            <div class="catolog__analiz-item" data-aos="zoom-out-right" data-aos="zoom-out-down" data-aos-delay="1300">
                                 <div class="catolog__analiz-item-info">
                                     <p class="catolog__analiz-text">СОЭ (Скорость Оседания Эритроцитов, ESR)</p>
                                     <div class="catolog__analiz-price">
@@ -180,7 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catolog__analiz-item">
+                            <div class="catolog__analiz-item" data-aos="zoom-out-left" data-aos="zoom-out-down" data-aos-delay="1300">
                                 <div class="catolog__analiz-item-info">
                                     <p class="catolog__analiz-text">СОЭ (Скорость Оседания Эритроцитов, ESR)</p>
                                     <div class="catolog__analiz-price">
@@ -239,7 +243,8 @@
 
 	<!-- modal registration -->
 	<div class="modal__form modal__registration">
-		<div class="modal fade" id="formRegistrationModal" aria-hidden="true" aria-labelledby="formRegistrationModalLabel" tabindex="-1">
+		<div class="modal fade" id="formRegistrationModal" aria-hidden="true"
+			aria-labelledby="formRegistrationModalLabel" tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -261,27 +266,33 @@
 						</div>
 						<form>
 							<div class="modal__form-wrap">
-								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
+								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов"
+									required>
 								<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
-								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович" required>
+								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович"
+									required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
 									<label for="formCheck1">Нет отчества</label>
 								</div>
 								<input type="text" name="gender" class="modal__form-inp" placeholder="Пол" required>
-								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
-								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
-								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
+								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88"
+									required>
+								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000"
+									required>
+								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
+									required>
 								<div class="modal__form-check">
-									<input type="checkbox" id="formCheck1">
-									<label for="formCheck1"><b>Согласен</b> с политикой в отношении персональных данных</label>
+									<input type="checkbox" id="formCheck2">
+									<label for="formCheck2"><b>Согласен с</b> <a href="#!">политикой в отношении персональных данных</a></label>
 								</div>
 								<div class="modal__form-check">
-									<input type="checkbox" id="formCheck1">
-									<label for="formCheck1"><b>Согласен</b> с условиями пользования личного кабинета</label>
+									<input type="checkbox" id="formCheck3">
+									<label for="formCheck3"><b>Согласен с</b> <a href="#!">условиями пользования личного кабинета</a></label>
 								</div>
 							</div>
-							<button type="submit" class="modal__form-btn" data-bs-toggle="modal" data-bs-target="#modalMini1">Далее</button>
+							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
+								data-bs-target="#modalMini1">Далее</button>
 						</form>
 					</div>
 				</div>
@@ -335,6 +346,10 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="libs/bootstrap5/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+	<!-- rolly js | cdn js link -->
+	<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+	<!-- aos js cdn link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 

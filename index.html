@@ -7,6 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
+	<!-- rolly js | css link -->
+	<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+	<!-- aos css cdn link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -15,8 +19,8 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container">
+		<header class="header" data-scene>
+			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
 				<div class="header__nav">
 					<a href="#!" class="logo">ЦИФРОМЕД</a>
 
@@ -68,32 +72,42 @@
 		</header>
 
 		<div class="header__fixed">
-            <div class="container">
-                <div class="header__fixed-content">
-                    <div class="header__fixed-search">
-                        <button type="submit" class="main-search-btn"><img src="images/icons/search2.svg" alt=""></button>
-                        <input type="search" placeholder="Исследование" class="main-search-inp">
-                    </div>
+			<div class="container">
+				<div class="header__fixed-content">
+					<div class="header__fixed-search">
+						<button type="submit" class="main-search-btn"><img src="images/icons/search2.svg"
+								alt=""></button>
+						<input type="search" placeholder="Исследование" class="main-search-inp">
+					</div>
 
-                    <div class="header__menu-tabs">
-                        <a href="basket.html" class="header__menu-shopping">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M5.50811 13.0915C5.50704 13.0857 5.50607 13.0799 5.50521 13.0741L4.28509 5.7534C4.16455 5.03012 3.53876 4.5 2.8055 4.5H2.49976C2.22361 4.5 1.99976 4.27614 1.99976 4C1.99976 3.72386 2.22361 3.5 2.49976 3.5H2.8055C3.99732 3.5 5.01878 4.34029 5.25501 5.5H19.6626C19.9948 5.5 20.2346 5.81795 20.1434 6.13736L18.1434 13.1374C18.0821 13.352 17.8859 13.5 17.6626 13.5H6.58999L6.71442 14.2466C6.83497 14.9699 7.46075 15.5 8.19401 15.5H19.4998C19.7759 15.5 19.9998 15.7239 19.9998 16C19.9998 16.2761 19.7759 16.5 19.4998 16.5H8.19401C6.97191 16.5 5.92894 15.6165 5.72802 14.411L5.50811 13.0915ZM5.42332 6.5L6.42332 12.5H17.2855L18.9998 6.5H5.42332ZM7.99976 21.5C6.89519 21.5 5.99976 20.6046 5.99976 19.5C5.99976 18.3954 6.89519 17.5 7.99976 17.5C9.10432 17.5 9.99975 18.3954 9.99975 19.5C9.99975 20.6046 9.10432 21.5 7.99976 21.5ZM7.99976 20.5C8.55204 20.5 8.99975 20.0523 8.99975 19.5C8.99975 18.9477 8.55204 18.5 7.99976 18.5C7.44747 18.5 6.99976 18.9477 6.99976 19.5C6.99976 20.0523 7.44747 20.5 7.99976 20.5ZM16.9998 21.5C15.8952 21.5 14.9998 20.6046 14.9998 19.5C14.9998 18.3954 15.8952 17.5 16.9998 17.5C18.1043 17.5 18.9998 18.3954 18.9998 19.5C18.9998 20.6046 18.1043 21.5 16.9998 21.5ZM16.9998 20.5C17.552 20.5 17.9998 20.0523 17.9998 19.5C17.9998 18.9477 17.552 18.5 16.9998 18.5C16.4475 18.5 15.9998 18.9477 15.9998 19.5C15.9998 20.0523 16.4475 20.5 16.9998 20.5Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                        <a href="#!" class="header__menu-person" data-bs-target="#formAuthorizeModal"
-                            data-bs-toggle="modal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M12.0002 12.4751C10.9002 12.4751 10.0002 12.1251 9.30024 11.4251C8.60024 10.7251 8.25024 9.8251 8.25024 8.7251C8.25024 7.6251 8.60024 6.7251 9.30024 6.0251C10.0002 5.3251 10.9002 4.9751 12.0002 4.9751C13.1002 4.9751 14.0002 5.3251 14.7002 6.0251C15.4002 6.7251 15.7502 7.6251 15.7502 8.7251C15.7502 9.8251 15.4002 10.7251 14.7002 11.4251C14.0002 12.1251 13.1002 12.4751 12.0002 12.4751ZM18.5002 20.5001H5.50024C5.08774 20.5001 4.73462 20.3532 4.44087 20.0595C4.14712 19.7657 4.00024 19.4126 4.00024 19.0001V18.1501C4.00024 17.5168 4.15858 16.9751 4.47524 16.5251C4.79191 16.0751 5.20024 15.7334 5.70024 15.5001C6.81691 15.0001 7.88774 14.6251 8.91274 14.3751C9.93774 14.1251 10.9669 14.0001 12.0002 14.0001C13.0336 14.0001 14.0586 14.1293 15.0752 14.3876C16.0919 14.6459 17.1579 15.0184 18.2733 15.5049C18.795 15.7404 19.2132 16.0818 19.528 16.5291C19.8428 16.9764 20.0002 17.5168 20.0002 18.1501V19.0001C20.0002 19.4126 19.8534 19.7657 19.5596 20.0595C19.2659 20.3532 18.9127 20.5001 18.5002 20.5001ZM5.50024 19.0001H18.5002V18.1501C18.5002 17.8834 18.4211 17.6293 18.2627 17.3876C18.1044 17.1459 17.9086 16.9668 17.6752 16.8501C16.6086 16.3334 15.6336 15.9793 14.7502 15.7876C13.8669 15.5959 12.9502 15.5001 12.0002 15.5001C11.0502 15.5001 10.1252 15.5959 9.22524 15.7876C8.32524 15.9793 7.35024 16.3334 6.30024 16.8501C6.06691 16.9668 5.87524 17.1459 5.72524 17.3876C5.57524 17.6293 5.50024 17.8834 5.50024 18.1501V19.0001ZM12.0002 10.9751C12.6502 10.9751 13.1877 10.7626 13.6127 10.3376C14.0377 9.9126 14.2502 9.3751 14.2502 8.7251C14.2502 8.0751 14.0377 7.5376 13.6127 7.1126C13.1877 6.6876 12.6502 6.4751 12.0002 6.4751C11.3502 6.4751 10.8127 6.6876 10.3877 7.1126C9.96274 7.5376 9.75024 8.0751 9.75024 8.7251C9.75024 9.3751 9.96274 9.9126 10.3877 10.3376C10.8127 10.7626 11.3502 10.9751 12.0002 10.9751Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                        <a href="#!" class="header__menu-bars menu-add">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.5C0.44772 0.5 0 0.94772 0 1.5C0 2.05228 0.44772 2.5 1 2.5H19C19.5523 2.5 20 2.05228 20 1.5C20 0.94772 19.5523 0.5 19 0.5H1ZM0 7.5C0 6.9477 0.44772 6.5 1 6.5H19C19.5523 6.5 20 6.9477 20 7.5C20 8.0523 19.5523 8.5 19 8.5H1C0.44772 8.5 0 8.0523 0 7.5ZM0 13.5C0 12.9477 0.44772 12.5 1 12.5H19C19.5523 12.5 20 12.9477 20 13.5C20 14.0523 19.5523 14.5 19 14.5H1C0.44772 14.5 0 14.0523 0 13.5Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+					<div class="header__menu-tabs">
+						<a href="basket.html" class="header__menu-shopping">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+								fill="none">
+								<path
+									d="M5.50811 13.0915C5.50704 13.0857 5.50607 13.0799 5.50521 13.0741L4.28509 5.7534C4.16455 5.03012 3.53876 4.5 2.8055 4.5H2.49976C2.22361 4.5 1.99976 4.27614 1.99976 4C1.99976 3.72386 2.22361 3.5 2.49976 3.5H2.8055C3.99732 3.5 5.01878 4.34029 5.25501 5.5H19.6626C19.9948 5.5 20.2346 5.81795 20.1434 6.13736L18.1434 13.1374C18.0821 13.352 17.8859 13.5 17.6626 13.5H6.58999L6.71442 14.2466C6.83497 14.9699 7.46075 15.5 8.19401 15.5H19.4998C19.7759 15.5 19.9998 15.7239 19.9998 16C19.9998 16.2761 19.7759 16.5 19.4998 16.5H8.19401C6.97191 16.5 5.92894 15.6165 5.72802 14.411L5.50811 13.0915ZM5.42332 6.5L6.42332 12.5H17.2855L18.9998 6.5H5.42332ZM7.99976 21.5C6.89519 21.5 5.99976 20.6046 5.99976 19.5C5.99976 18.3954 6.89519 17.5 7.99976 17.5C9.10432 17.5 9.99975 18.3954 9.99975 19.5C9.99975 20.6046 9.10432 21.5 7.99976 21.5ZM7.99976 20.5C8.55204 20.5 8.99975 20.0523 8.99975 19.5C8.99975 18.9477 8.55204 18.5 7.99976 18.5C7.44747 18.5 6.99976 18.9477 6.99976 19.5C6.99976 20.0523 7.44747 20.5 7.99976 20.5ZM16.9998 21.5C15.8952 21.5 14.9998 20.6046 14.9998 19.5C14.9998 18.3954 15.8952 17.5 16.9998 17.5C18.1043 17.5 18.9998 18.3954 18.9998 19.5C18.9998 20.6046 18.1043 21.5 16.9998 21.5ZM16.9998 20.5C17.552 20.5 17.9998 20.0523 17.9998 19.5C17.9998 18.9477 17.552 18.5 16.9998 18.5C16.4475 18.5 15.9998 18.9477 15.9998 19.5C15.9998 20.0523 16.4475 20.5 16.9998 20.5Z"
+									fill="#3A2B6A" />
+							</svg>
+						</a>
+						<a href="#!" class="header__menu-person" data-bs-target="#formAuthorizeModal"
+							data-bs-toggle="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+								fill="none">
+								<path
+									d="M12.0002 12.4751C10.9002 12.4751 10.0002 12.1251 9.30024 11.4251C8.60024 10.7251 8.25024 9.8251 8.25024 8.7251C8.25024 7.6251 8.60024 6.7251 9.30024 6.0251C10.0002 5.3251 10.9002 4.9751 12.0002 4.9751C13.1002 4.9751 14.0002 5.3251 14.7002 6.0251C15.4002 6.7251 15.7502 7.6251 15.7502 8.7251C15.7502 9.8251 15.4002 10.7251 14.7002 11.4251C14.0002 12.1251 13.1002 12.4751 12.0002 12.4751ZM18.5002 20.5001H5.50024C5.08774 20.5001 4.73462 20.3532 4.44087 20.0595C4.14712 19.7657 4.00024 19.4126 4.00024 19.0001V18.1501C4.00024 17.5168 4.15858 16.9751 4.47524 16.5251C4.79191 16.0751 5.20024 15.7334 5.70024 15.5001C6.81691 15.0001 7.88774 14.6251 8.91274 14.3751C9.93774 14.1251 10.9669 14.0001 12.0002 14.0001C13.0336 14.0001 14.0586 14.1293 15.0752 14.3876C16.0919 14.6459 17.1579 15.0184 18.2733 15.5049C18.795 15.7404 19.2132 16.0818 19.528 16.5291C19.8428 16.9764 20.0002 17.5168 20.0002 18.1501V19.0001C20.0002 19.4126 19.8534 19.7657 19.5596 20.0595C19.2659 20.3532 18.9127 20.5001 18.5002 20.5001ZM5.50024 19.0001H18.5002V18.1501C18.5002 17.8834 18.4211 17.6293 18.2627 17.3876C18.1044 17.1459 17.9086 16.9668 17.6752 16.8501C16.6086 16.3334 15.6336 15.9793 14.7502 15.7876C13.8669 15.5959 12.9502 15.5001 12.0002 15.5001C11.0502 15.5001 10.1252 15.5959 9.22524 15.7876C8.32524 15.9793 7.35024 16.3334 6.30024 16.8501C6.06691 16.9668 5.87524 17.1459 5.72524 17.3876C5.57524 17.6293 5.50024 17.8834 5.50024 18.1501V19.0001ZM12.0002 10.9751C12.6502 10.9751 13.1877 10.7626 13.6127 10.3376C14.0377 9.9126 14.2502 9.3751 14.2502 8.7251C14.2502 8.0751 14.0377 7.5376 13.6127 7.1126C13.1877 6.6876 12.6502 6.4751 12.0002 6.4751C11.3502 6.4751 10.8127 6.6876 10.3877 7.1126C9.96274 7.5376 9.75024 8.0751 9.75024 8.7251C9.75024 9.3751 9.96274 9.9126 10.3877 10.3376C10.8127 10.7626 11.3502 10.9751 12.0002 10.9751Z"
+									fill="#3A2B6A" />
+							</svg>
+						</a>
+						<a href="#!" class="header__menu-bars menu-add">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M1 0.5C0.44772 0.5 0 0.94772 0 1.5C0 2.05228 0.44772 2.5 1 2.5H19C19.5523 2.5 20 2.05228 20 1.5C20 0.94772 19.5523 0.5 19 0.5H1ZM0 7.5C0 6.9477 0.44772 6.5 1 6.5H19C19.5523 6.5 20 6.9477 20 7.5C20 8.0523 19.5523 8.5 19 8.5H1C0.44772 8.5 0 8.0523 0 7.5ZM0 13.5C0 12.9477 0.44772 12.5 1 12.5H19C19.5523 12.5 20 12.9477 20 13.5C20 14.0523 19.5523 14.5 19 14.5H1C0.44772 14.5 0 14.0523 0 13.5Z"
+									fill="#3A2B6A" />
+							</svg>
+						</a>
+					</div>
+				</div>
 
 				<div class="header__menu-wrap">
 					<div class="modal__menu">
@@ -125,15 +139,15 @@
 						<p class="modal__menu-copyright">ⓒ 2005-2023 ООО “КДЛ” Все права защищены. </p>
 					</div>
 				</div>
-            </div>
-        </div>
+			</div>
+		</div>
 
 
 		<main>
-			<section class="main-sec">
+			<section class="main-sec" data-scene>
 				<div class="container">
 					<div class="main__content">
-						<div class="main-search">
+						<div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
 							<button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
 									alt=""></button>
 							<input type="search" placeholder="Исследование" class="main-search-inp">
@@ -171,16 +185,24 @@
 				</div>
 			</section>
 
-			<section class="main__info-slide">
+			<section class="main__info-slide" data-scene>
 				<div class="container main__info-container">
 					<div class="main__info-slide-content">
 						<div class="swiper mySwiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<a href="#!" class="main__info-slide-item">
+										<span>Акции</span>
+										<div class="main__info-slide-img">
+											<img src="./images/main__info-slide-img1.svg" alt="">
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#!" class="main__info-slide-item">
 										<span>Популярное</span>
 										<div class="main__info-slide-img">
-											<img src="./images/main__info-slide-img1.png" alt="">
+											<img src="./images/main__info-slide-img2.svg" alt="">
 										</div>
 									</a>
 								</div>
@@ -188,31 +210,31 @@
 									<a href="#!" class="main__info-slide-item">
 										<span>Чекапы</span>
 										<div class="main__info-slide-img">
-											<img src="./images/main__info-slide-img2.png" alt="">
+											<img src="./images/main__info-slide-img3.svg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="swiper-slide">
 									<a href="#!" class="main__info-slide-item">
-										<span>Биохимия</span>
+										<span>Комплекс</span>
 										<div class="main__info-slide-img">
-											<img src="./images/main__info-slide-img3.png" alt="">
+											<img src="./images/main__info-slide-img4.svg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="swiper-slide">
 									<a href="#!" class="main__info-slide-item">
-										<span>Витамины</span>
+										<span>Показать все</span>
 										<div class="main__info-slide-img">
-											<img src="./images/main__info-slide-img4.png" alt="">
+											<img src="./images/main__info-slide-img5.svg" alt="">
 										</div>
 									</a>
 								</div>
 								<div class="swiper-slide">
 									<a href="#!" class="main__info-slide-item">
-										<span>Гормоны</span>
+										<span>История заказов</span>
 										<div class="main__info-slide-img">
-											<img src="./images/main__info-slide-img5.png" alt="">
+											<img src="./images/main__info-slide-img6.svg" alt="">
 										</div>
 									</a>
 								</div>
@@ -222,10 +244,10 @@
 				</div>
 			</section>
 
-			<section class="main__info-items">
+			<section class="main__info-items" data-scene>
 				<div class="container">
 					<div class="main__info-items-wrap">
-						<a href="#!" class="main__info-item">
+						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="500">
 							<div class="main__info-item-content">
 								<p class="main__info-item-text">Общеклинический анализ крови</p>
 								<div class="main__info-item-price">
@@ -235,7 +257,7 @@
 							</div>
 							<img src="./images/icons/shoppingcart.svg" alt="">
 						</a>
-						<a href="#!" class="main__info-item">
+						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="600">
 							<div class="main__info-item-content">
 								<p class="main__info-item-text">Глюкоза</p>
 								<div class="main__info-item-price">
@@ -245,7 +267,7 @@
 							</div>
 							<img src="./images/icons/shoppingcart.svg" alt="">
 						</a>
-						<a href="#!" class="main__info-item">
+						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="700">
 							<div class="main__info-item-content">
 								<p class="main__info-item-text">Ферритин</p>
 								<div class="main__info-item-price">
@@ -255,7 +277,7 @@
 							</div>
 							<img src="./images/icons/shoppingcart.svg" alt="">
 						</a>
-						<a href="#!" class="main__info-item">
+						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="800">
 							<div class="main__info-item-content">
 								<p class="main__info-item-text">Липидный профиль</p>
 								<div class="main__info-item-price">
@@ -266,49 +288,54 @@
 							<img src="./images/icons/shoppingcart.svg" alt="">
 						</a>
 
-						<a href="#!" class="sec-btn-white main__info-items-btn">Показать еще</a>
+						<a href="#!" class="sec-btn-white main__info-items-btn" data-aos="fade-up"
+							data-aos-delay="900">Показать еще</a>
 					</div>
 				</div>
 			</section>
 
-			<section class="digital-lab">
+			<section class="digital-lab" data-scene>
 				<div class="container">
 					<div class="digital__lab-content">
 						<h3 class="digital__lab-title">Как сдать анализы вместе с Цифролаб?</h3>
 
 						<div class="digital__lab-items">
-							<div class="digital__lab-item digital__lab-item1">
-								<img src="./images/digital-lab-img1.png" alt="" class="digital-lab-img">
+							<div class="digital__lab-item digital__lab-item1" data-aos="fade-left" data-aos-delay="600"
+								data-aos-duration="400">
+								<img src="./images/digital-lab-img1.svg" alt="" class="digital-lab-img">
 								<p class="digital__item-text">Собери корзину</p>
 								<div class="digital__lab-line"></div>
 								<span class="digital__item-num">1</span>
 							</div>
-							<div class="digital__lab-item digital__lab-item2">
+							<div class="digital__lab-item digital__lab-item2" data-aos="fade-right" data-aos-delay="900"
+								data-aos-duration="400">
 								<span class="digital__item-num">2</span>
 								<div class="digital__lab-line"></div>
 								<p class="digital__item-text">Оплати</p>
-								<img src="./images/digital-lab-img2.png" alt="" class="digital-lab-img">
+								<img src="./images/digital-lab-img2.svg" alt="" class="digital-lab-img">
 							</div>
-							<div class="digital__lab-item digital__lab-item3">
-								<img src="./images/digital-lab-img3.png" alt="" class="digital-lab-img">
+							<div class="digital__lab-item digital__lab-item3" data-aos="fade-left" data-aos-delay="1100"
+								data-aos-duration="400">
+								<img src="./images/digital-lab-img3.svg" alt="" class="digital-lab-img">
 								<p class="digital__item-text">Предъяви сертификат в мед.офисе</p>
 								<div class="digital__lab-line"></div>
 								<span class="digital__item-num">3</span>
 							</div>
-							<div class="digital__lab-item digital__lab-item4">
+							<div class="digital__lab-item digital__lab-item4" data-aos="fade-right"
+								data-aos-delay="1300" data-aos-duration="400">
 								<span class="digital__item-num">4</span>
 								<div class="digital__lab-line"></div>
 								<p class="digital__item-text">Получи результат в личном кабинете</p>
-								<img src="./images/digital-lab-img4.png" alt="" class="digital-lab-img">
+								<img src="./images/digital-lab-img4.svg" alt="" class="digital-lab-img">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="location-sec">
+			<section class="location-sec" data-scene>
 				<div class="container">
-					<div class="location__sec-content">
+					<div class="location__sec-content" data-aos="zoom-in-up" data-aos-delay="500">
 						<div class="main-search">
 							<button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
 									alt=""></button>
@@ -322,30 +349,32 @@
 				</div>
 			</section>
 
-			<section class="nourse-info">
+			<section class="nourse-info" data-scene>
 				<div class="container">
 					<div class="nourse-info-content">
-						<img src="./images/nurse-img.png" alt="" class="nurse__info-img">
+						<img src="./images/nurse-img.png" alt="" class="nurse__info-img" data-aos="zoom-in-right"
+							data-aos-delay="300">
 						<div class="nurse__info-items">
-							<div class="nurse__info-item">
-								<img src="./images/nurse-item-img1.png" alt="">
+							<div class="nurse__info-item" data-aos="zoom-in-left" data-aos-delay="900">
+								<img src="./images/nurse-item-img1.svg" alt="">
 								<div class="nurse__info-text-wrap">
 									<p class="nurse__item-title">БОЛЕЕ 1090</p>
 									<span class="nurse__info-text">партнерских медицинских офисов</span>
 								</div>
 							</div>
-							<div class="nurse__info-item nurse__info-item2">
-								<img src="./images/nurse-item-img2.png" alt="">
+							<div class="nurse__info-item nurse__info-item2" data-aos="zoom-in-left"
+								data-aos-delay="1200">
+								<img src="./images/nurse-item-img2.svg" alt="">
 								<div class="nurse__info-text-wrap">
 									<p class="nurse__item-title">БОЛЕЕ 2000</p>
-									<span class="nurse__info-text">партнерских медицинских офисов</span>
+									<span class="nurse__info-text">видов исследований</span>
 								</div>
 							</div>
-							<div class="nurse__info-item">
-								<img src="./images/nurse-item-img3.png" alt="">
+							<div class="nurse__info-item" data-aos="zoom-in-left" data-aos-delay="1500">
+								<img src="./images/nurse-item-img3.svg" alt="">
 								<div class="nurse__info-text-wrap">
 									<p class="nurse__item-title">БОЛЕЕ чем в 20 городах</p>
-									<span class="nurse__info-text">партнерских медицинских офисов</span>
+									<span class="nurse__info-text">расположены наши представительства</span>
 								</div>
 							</div>
 						</div>
@@ -353,38 +382,39 @@
 				</div>
 			</section>
 
-			<section class="info-cards">
+			<section class="info-cards" data-scene>
 				<div class="container">
 					<div class="info__cards-wrap">
-						<div class="info__card">
+						<div class="info__card" data-aos="fade-up" data-aos-delay="500">
 							<a href="#!" class="info__card-img"><img src="./images/info-card-img1.png" alt=""></a>
 							<div class="info__card-content">
 								<p class="info__card-title">
 									Как полезная пища влияет на наш организм
 								</p>
-								<a href="#!" class="info__card-link">Читать</a>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
 							</div>
 						</div>
-						<div class="info__card">
+						<div class="info__card" data-aos="fade-up" data-aos-delay="800">
 							<a href="#!" class="info__card-img"><img src="./images/info-card-img2.png" alt=""></a>
 							<div class="info__card-content">
 								<p class="info__card-title">
 									Как полезная пища влияет на наш организм
 								</p>
-								<a href="#!" class="info__card-link">Читать</a>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
 							</div>
 						</div>
-						<a href="#!" class="info__card-btn sec-btn-white">Посмотреть все</a>
+						<a href="#!" class="info__card-btn sec-btn-white" data-aos="fade-up"
+							data-aos-delay="1100">Посмотреть все</a>
 					</div>
 				</div>
 			</section>
 
-			<section class="acordion-info">
+			<section class="acordion-info" data-scene>
 				<div class="container">
 					<div class="acordion__info-sec">
 
 						<div class="accordion accordion-flush" id="accordionFlushExample">
-							<div class="accordion-item">
+							<div class="accordion-item" data-aos="zoom-in-right" data-aos-delay="600">
 								<h2 class="accordion-header" id="flush-headingOne">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseOne" aria-expanded="false"
@@ -395,11 +425,11 @@
 								<div id="flush-collapseOne" class="accordion-collapse collapse"
 									aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">Placeholder content for this accordion, which is
-										intended to demonstrate the <code>.accordion-flush</code> class. This is the
+										intended to demonstrate the class. This is the
 										first item's accordion body.</div>
 								</div>
 							</div>
-							<div class="accordion-item">
+							<div class="accordion-item" data-aos="zoom-in-right" data-aos-delay="1000">
 								<h2 class="accordion-header" id="flush-headingTwo">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -410,12 +440,12 @@
 								<div id="flush-collapseTwo" class="accordion-collapse collapse"
 									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">Placeholder content for this accordion, which is
-										intended to demonstrate the <code>.accordion-flush</code> class. This is the
+										intended to demonstrate the class. This is the
 										second item's accordion body. Let's imagine this being filled with some actual
 										content.</div>
 								</div>
 							</div>
-							<div class="accordion-item">
+							<div class="accordion-item" data-aos="zoom-in-right" data-aos-delay="1300">
 								<h2 class="accordion-header" id="flush-headingThree">
 									<button class="accordion-button accordion-button-text collapsed" type="button"
 										data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
@@ -426,7 +456,7 @@
 								<div id="flush-collapseThree" class="accordion-collapse collapse"
 									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">Placeholder content for this accordion, which is
-										intended to demonstrate the <code>.accordion-flush</code> class. This is the
+										intended to demonstrate the class. This is the
 										third item's accordion body. Nothing more exciting happening here in terms of
 										content, but just filling up the space to make it look, at least at first
 										glance, a bit more representative of how this would look in a real-world
@@ -439,10 +469,11 @@
 				</div>
 			</section>
 
-			<section class="socicial-media">
+			<section class="socicial-media" data-scene>
 				<div class="container">
 					<div class="socicial__media-content">
-						<div class="socicial__media-info">
+						<div class="socicial__media-info" data-aos="fade-up-right" data-aos="zoom-out-down"
+							data-aos-delay="800">
 							<p class="socicial__media-title">Не нашли свой вопрос?</p>
 							<div class="socicial__media-text-wrap">
 								<span class="socicial__media-text">Напишите нам</span>
@@ -452,7 +483,8 @@
 						</div>
 						<span class="line-br"></span>
 
-						<div class="socicial__media-links">
+						<div class="socicial__media-links" data-aos="fade-up-left" data-aos="zoom-out-down"
+							data-aos-delay="800">
 							<a href="#!" class="socicial__media-link">
 								<img src="./images/icons/telegram-smal.svg" alt="">
 								<span>Telegram</span>
@@ -468,10 +500,10 @@
 
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" data-scene>
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__socicial">
+					<div class="footer__socicial" data-aos="fade-up" data-aos-delay="500">
 						<a href="#!" class="ftr-logo">
 							<img src="./images/icons/ftr-logo.svg" alt="">
 						</a>
@@ -479,19 +511,19 @@
 
 						<div class="ftr__socicial-icons">
 							<a href="#!" class="ftr__socicial-icon">
-								<img src="./images/icons/whats-app.png" alt="">
+								<img src="./images/icons/whats-app.svg" alt="">
 							</a>
 							<a href="#!" class="ftr__socicial-icon">
-								<img src="./images/icons/telegram.png" alt="">
+								<img src="./images/icons/telegram.svg" alt="">
 							</a>
 							<a href="#!" class="ftr__socicial-icon">
-								<img src="./images/icons/viber.png" alt="">
+								<img src="./images/icons/viber.svg" alt="">
 							</a>
 						</div>
 					</div>
 
 					<div class="footer__info">
-						<div class="footer__info-item">
+						<div class="footer__info-item" data-aos="fade-up" data-aos-delay="700">
 							<p class="footer__info-title">О компании</p>
 							<div class="footer__info-links">
 								<a href="#!" class="footer__info-link">Новости</a>
@@ -499,7 +531,7 @@
 								<a href="#!" class="footer__info-link">Отзывы</a>
 							</div>
 						</div>
-						<div class="footer__info-item">
+						<div class="footer__info-item" data-aos="fade-up" data-aos-delay="900">
 							<p class="footer__info-title">Услуги</p>
 							<div class="footer__info-links">
 								<a href="#!" class="footer__info-link">Анализы</a>
@@ -507,7 +539,7 @@
 								<a href="#!" class="footer__info-link">Чек-ап</a>
 							</div>
 						</div>
-						<div class="footer__info-item">
+						<div class="footer__info-item" data-aos="fade-up" data-aos-delay="1100">
 							<p class="footer__info-title">Пациентам</p>
 							<div class="footer__info-links">
 								<a href="#!" class="footer__info-link">Личный кабинет</a>
@@ -521,7 +553,7 @@
 			</div>
 		</footer>
 
-		<div class="ftr-copyright">
+		<div class="ftr-copyright" data-scene>
 			<div class="container">
 				<p class="ftr-copyright-text">Политика в отношении обработки персональных данных</p>
 			</div>
@@ -612,14 +644,14 @@
 								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
 									required>
 								<div class="modal__form-check">
-									<input type="checkbox" id="formCheck1">
-									<label for="formCheck1"><b>Согласен</b> с политикой в отношении персональных
-										данных</label>
+									<input type="checkbox" id="formCheck2">
+									<label for="formCheck2"><b>Согласен с</b> <a href="#!">политикой в отношении
+											персональных данных</a></label>
 								</div>
 								<div class="modal__form-check">
-									<input type="checkbox" id="formCheck1">
-									<label for="formCheck1"><b>Согласен</b> с условиями пользования личного
-										кабинета</label>
+									<input type="checkbox" id="formCheck3">
+									<label for="formCheck3"><b>Согласен с</b> <a href="#!">условиями пользования личного
+											кабинета</a></label>
 								</div>
 							</div>
 							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
@@ -639,7 +671,7 @@
 					<div class="modal-body">
 						<div class="modal__mini-content">
 							<h4 class="modal__mini-title">Регистрация прошла успешно!</h4>
-							<img src="./images/modal-mini-img1.png" alt="">
+							<img src="./images/modal-mini-img1.png" alt="" class="modal__mini-img1">
 							<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
 						</div>
 					</div>
@@ -657,7 +689,7 @@
 					<div class="modal-body">
 						<div class="modal__mini-content">
 							<h4 class="modal__mini-title">Оплата прошла успешно!</h4>
-							<img src="./images/modal-mini-img2.png" alt="">
+							<img src="./images/modal-mini-img2.png" alt="" class="modal__mini-img2">
 							<div class="modal__mini-links">
 								<a href="#!" class="modal__mini-link">Перейти в личный кабинет</a>
 								<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
@@ -676,6 +708,10 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<!-- rolly js | cdn js link -->
+	<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+	<!-- aos js cdn link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

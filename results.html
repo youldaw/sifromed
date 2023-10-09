@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
+    <!-- rolly js | css link -->
+    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+    <!-- aos css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -15,8 +19,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
+        <header class="header" data-scene>
+            <div class="container" data-aos="zoom-out-down" data-aos-delay="700">
                 <div class="header__nav">
                     <a href="#!" class="logo">ЦИФРОМЕД</a>
 
@@ -140,10 +144,10 @@
 
         <main>
 
-            <section class="results-sec">
+            <section class="results-sec" data-scene>
                 <div class="container">
                     <div class="results__content">
-                        <div class="main-search">
+                        <div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
                             <button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
                                     alt=""></button>
                             <input type="search" placeholder="Исследование" class="main-search-inp">
@@ -151,14 +155,14 @@
 
                         <div class="results__tabs">
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" role="presentation" data-aos="zoom-in-down" data-aos-delay="700">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                         aria-selected="true">
                                         Результаты
                                     </button>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" role="presentation" data-aos="zoom-in-down" data-aos-delay="800">
                                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-profile" type="button" role="tab"
                                         aria-controls="pills-profile" aria-selected="false">
@@ -171,7 +175,7 @@
                                     <div class="results__tab-content">
                                         <div class="results__tab-drop">
 
-                                            <div class="dropdown add-drop">
+                                            <div class="dropdown add-drop" data-aos="fade-left" data-aos-delay="900">
                                                 <button class="results__drop-btn dropdown-toggle" data-bs-toggle="modal" data-bs-target="#modalResult">
                                                     по статусу
                                                     <img src="./images/icons/down.svg" alt=""
@@ -179,7 +183,7 @@
                                                 </button>
                                             </div>
 
-                                            <div class="dropdown add-drop">
+                                            <div class="dropdown add-drop" data-aos="fade-right" data-aos-delay="900">
                                                 <button class="results__drop-btn dropdown-toggle" data-bs-toggle="modal" data-bs-target="#modalDate">
                                                     по дате обращения
                                                     <img src="./images/icons/down.svg" alt=""
@@ -190,7 +194,7 @@
                                         </div>
 
                                         <div class="results__tab-items">
-                                            <div class="results__tab-item">
+                                            <div class="results__tab-item" data-aos="fade-up" data-aos-delay="1000">
                                                 <div class="results__item-id">
                                                     <p>Заказ №</p>
                                                     <span>1212344</span>
@@ -201,7 +205,7 @@
                                                     Оплачено
                                                 </a>
                                             </div>
-                                            <div class="results__tab-item">
+                                            <div class="results__tab-item" data-aos="fade-up" data-aos-delay="1200">
                                                 <div class="results__item-id">
                                                     <p>Заказ №</p>
                                                     <span>1212344</span>
@@ -212,7 +216,7 @@
                                                     Оплачено
                                                 </a>
                                             </div>
-                                            <div class="results__tab-item">
+                                            <div class="results__tab-item" data-aos="fade-up" data-aos-delay="1400">
                                                 <div class="results__item-id">
                                                     <p>Заказ №</p>
                                                     <span>1212344</span>
@@ -223,7 +227,7 @@
                                                     Результат готов
                                                 </a>
                                             </div>
-                                            <div class="results__tab-item">
+                                            <div class="results__tab-item" data-aos="fade-up" data-aos-delay="1600">
                                                 <div class="results__item-id">
                                                     <p>Заказ №</p>
                                                     <span>1212344</span>
@@ -327,65 +331,63 @@
 
 
     <!-- modal registration -->
-    <div class="modal__form modal__registration">
-        <div class="modal fade" id="formRegistrationModal" aria-hidden="true"
-            aria-labelledby="formRegistrationModalLabel" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal__authorization-title">Авторизация</h5>
-                        <button type="button" class="modal__menu-close" data-bs-dismiss="modal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                fill="none">
-                                <path
-                                    d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
-                                    fill="#3A2B6A" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal__form-links">
-                            <a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal"
-                                data-bs-toggle="modal">Войти</a>
-                            <a href="#!" class="modal__form-link active">Зарегистрироваться</a>
-                        </div>
-                        <form>
-                            <div class="modal__form-wrap">
-                                <input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов"
-                                    required>
-                                <input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
-                                <input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович"
-                                    required>
-                                <div class="modal__form-check">
-                                    <input type="checkbox" id="formCheck1">
-                                    <label for="formCheck1">Нет отчества</label>
-                                </div>
-                                <input type="text" name="gender" class="modal__form-inp" placeholder="Пол" required>
-                                <input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88"
-                                    required>
-                                <input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000"
-                                    required>
-                                <input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
-                                    required>
-                                <div class="modal__form-check">
-                                    <input type="checkbox" id="formCheck1">
-                                    <label for="formCheck1"><b>Согласен</b> с политикой в отношении персональных
-                                        данных</label>
-                                </div>
-                                <div class="modal__form-check">
-                                    <input type="checkbox" id="formCheck1">
-                                    <label for="formCheck1"><b>Согласен</b> с условиями пользования личного
-                                        кабинета</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="modal__form-btn" data-bs-toggle="modal"
-                                data-bs-target="#modalMini1">Далее</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="modal__form modal__registration">
+		<div class="modal fade" id="formRegistrationModal" aria-hidden="true"
+			aria-labelledby="formRegistrationModalLabel" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal__authorization-title">Авторизация</h5>
+						<button type="button" class="modal__menu-close" data-bs-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+								fill="none">
+								<path
+									d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
+									fill="#3A2B6A" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="modal__form-links">
+							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal"
+								data-bs-toggle="modal">Войти</a>
+							<a href="#!" class="modal__form-link active">Зарегистрироваться</a>
+						</div>
+						<form>
+							<div class="modal__form-wrap">
+								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов"
+									required>
+								<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
+								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович"
+									required>
+								<div class="modal__form-check">
+									<input type="checkbox" id="formCheck1">
+									<label for="formCheck1">Нет отчества</label>
+								</div>
+								<input type="text" name="gender" class="modal__form-inp" placeholder="Пол" required>
+								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88"
+									required>
+								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000"
+									required>
+								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
+									required>
+								<div class="modal__form-check">
+									<input type="checkbox" id="formCheck2">
+									<label for="formCheck2"><b>Согласен с</b> <a href="#!">политикой в отношении персональных данных</a></label>
+								</div>
+								<div class="modal__form-check">
+									<input type="checkbox" id="formCheck3">
+									<label for="formCheck3"><b>Согласен с</b> <a href="#!">условиями пользования личного кабинета</a></label>
+								</div>
+							</div>
+							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
+								data-bs-target="#modalMini1">Далее</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- MODAL MINI 1 -->
     <div class="modal__mini modal__mini1">
@@ -452,7 +454,7 @@
     </div>
 
 
-    <!-- Modal result -->
+    <!-- Modal date -->
     <div class="modal__date">
         <div class="modal fade" id="modalDate" tabindex="-1" aria-labelledby="modalDateLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -475,6 +477,10 @@
     <script src="libs/bootstrap5/popper.js"></script>
     <script src="libs/bootstrap5/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <!-- rolly js | cdn js link -->
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <!-- aos js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 
