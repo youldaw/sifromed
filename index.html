@@ -7,10 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
-	<!-- rolly js | css link -->
-	<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
-	<!-- aos css cdn link -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -19,7 +16,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-scene>
+		<header class="header">
 			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
 				<div class="header__nav">
 					<a href="#!" class="logo">ЦИФРОМЕД</a>
@@ -144,7 +141,7 @@
 
 
 		<main>
-			<section class="main-sec" data-scene>
+			<section class="main-sec">
 				<div class="container">
 					<div class="main__content">
 						<div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
@@ -185,7 +182,7 @@
 				</div>
 			</section>
 
-			<section class="main__info-slide" data-scene>
+			<section class="main__info-slide">
 				<div class="container main__info-container">
 					<div class="main__info-slide-content">
 						<div class="swiper mySwiper">
@@ -244,57 +241,114 @@
 				</div>
 			</section>
 
-			<section class="main__info-items" data-scene>
+			<section class="main__info-items">
 				<div class="container">
 					<div class="main__info-items-wrap">
-						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="500">
-							<div class="main__info-item-content">
-								<p class="main__info-item-text">Общеклинический анализ крови</p>
-								<div class="main__info-item-price">
-									<span>475₽</span>
-									<b>333 ₽</b>
-								</div>
-							</div>
-							<img src="./images/icons/shoppingcart.svg" alt="">
-						</a>
-						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="600">
-							<div class="main__info-item-content">
-								<p class="main__info-item-text">Глюкоза</p>
-								<div class="main__info-item-price">
-									<span>200₽</span>
-									<b>140 ₽</b>
-								</div>
-							</div>
-							<img src="./images/icons/shoppingcart.svg" alt="">
-						</a>
-						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="700">
-							<div class="main__info-item-content">
-								<p class="main__info-item-text">Ферритин</p>
-								<div class="main__info-item-price">
-									<span>565₽</span>
-									<b>396 ₽</b>
-								</div>
-							</div>
-							<img src="./images/icons/shoppingcart.svg" alt="">
-						</a>
-						<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="800">
-							<div class="main__info-item-content">
-								<p class="main__info-item-text">Липидный профиль</p>
-								<div class="main__info-item-price">
-									<span>1 180₽</span>
-									<b>826 ₽</b>
-								</div>
-							</div>
-							<img src="./images/icons/shoppingcart.svg" alt="">
-						</a>
 
-						<a href="#!" class="sec-btn-white main__info-items-btn" data-aos="fade-up"
-							data-aos-delay="900">Показать еще</a>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="500">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Общеклинический анализ крови</p>
+									<div class="main__info-item-price">
+										<span>475₽</span>
+										<b>333 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="600">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Глюкоза</p>
+									<div class="main__info-item-price">
+										<span>200₽</span>
+										<b>140 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="700">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Ферритин</p>
+									<div class="main__info-item-price">
+										<span>565₽</span>
+										<b>396 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="800">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Липидный профиль</p>
+									<div class="main__info-item-price">
+										<span>1 180₽</span>
+										<b>826 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="700">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Ферритин</p>
+									<div class="main__info-item-price">
+										<span>565₽</span>
+										<b>396 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="main-info-block">
+							<a href="#!" class="main__info-item" data-aos="fade-up" data-aos-delay="800">
+								<div class="main__info-item-content">
+									<p class="main__info-item-text">Липидный профиль</p>
+									<div class="main__info-item-price">
+										<span>1 180₽</span>
+										<b>826 ₽</b>
+									</div>
+								</div>
+								<span class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+										<path d="M5.02209 12.7887C5.02057 12.781 5.01918 12.7732 5.01794 12.7655L3.27139 3.00454C3.09883 2.04016 2.20304 1.33333 1.1534 1.33333H0.715734C0.320445 1.33333 0 1.03486 0 0.666667C0 0.298477 0.320445 0 0.715734 0H1.1534C2.85945 0 4.32164 1.12039 4.6598 2.66667H25.2838C25.7593 2.66667 26.1027 3.0906 25.972 3.51648L23.1091 12.8498C23.0213 13.136 22.7405 13.3333 22.4209 13.3333H6.57077L6.74889 14.3288C6.92145 15.2932 7.81724 16 8.86688 16H25.0507C25.446 16 25.7664 16.2985 25.7664 16.6667C25.7664 17.0349 25.446 17.3333 25.0507 17.3333H8.86688C7.11748 17.3333 5.6245 16.1553 5.3369 14.548L5.02209 12.7887ZM4.90072 4L6.33219 12H21.881L24.335 4H4.90072ZM8.58881 24C7.00765 24 5.72587 22.8061 5.72587 21.3333C5.72587 19.8606 7.00765 18.6667 8.58881 18.6667C10.17 18.6667 11.4517 19.8606 11.4517 21.3333C11.4517 22.8061 10.17 24 8.58881 24ZM8.58881 22.6667C9.37939 22.6667 10.0203 22.0697 10.0203 21.3333C10.0203 20.597 9.37939 20 8.58881 20C7.79823 20 7.15734 20.597 7.15734 21.3333C7.15734 22.0697 7.79823 22.6667 8.58881 22.6667ZM21.472 24C19.8909 24 18.6091 22.8061 18.6091 21.3333C18.6091 19.8606 19.8909 18.6667 21.472 18.6667C23.0532 18.6667 24.335 19.8606 24.335 21.3333C24.335 22.8061 23.0532 24 21.472 24ZM21.472 22.6667C22.2626 22.6667 22.9035 22.0697 22.9035 21.3333C22.9035 20.597 22.2626 20 21.472 20C20.6814 20 20.0406 20.597 20.0406 21.3333C20.0406 22.0697 20.6814 22.6667 21.472 22.6667Z" fill="white"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+
+						<a href="#!" id="show-more" class="sec-btn-white main__info-items-btn" data-aos="fade-up" data-aos-delay="900">Показать еще</a>
+						<a href="#!" id="show-less" class="sec-btn-white main__info-items-btn" data-aos="fade-up" data-aos-delay="900">Скрывать</a>
 					</div>
 				</div>
 			</section>
 
-			<section class="digital-lab" data-scene>
+			<section class="digital-lab">
 				<div class="container">
 					<div class="digital__lab-content">
 						<h3 class="digital__lab-title">Как сдать анализы вместе с Цифролаб?</h3>
@@ -333,7 +387,7 @@
 				</div>
 			</section>
 
-			<section class="location-sec" data-scene>
+			<section class="location-sec">
 				<div class="container">
 					<div class="location__sec-content" data-aos="zoom-in-up" data-aos-delay="500">
 						<div class="main-search">
@@ -349,11 +403,12 @@
 				</div>
 			</section>
 
-			<section class="nourse-info" data-scene>
+			<section class="nourse-info">
 				<div class="container">
 					<div class="nourse-info-content">
-						<img src="./images/nurse-img.png" alt="" class="nurse__info-img" data-aos="zoom-in-right"
-							data-aos-delay="300">
+						<div class="nurse__info-img" data-aos="zoom-in-right" data-aos-delay="300">
+							<img src="./images/nurse-img.png" alt="">
+						</div>
 						<div class="nurse__info-items">
 							<div class="nurse__info-item" data-aos="zoom-in-left" data-aos-delay="900">
 								<img src="./images/nurse-item-img1.svg" alt="">
@@ -362,15 +417,16 @@
 									<span class="nurse__info-text">партнерских медицинских офисов</span>
 								</div>
 							</div>
-							<div class="nurse__info-item nurse__info-item2" data-aos="zoom-in-left"
-								data-aos-delay="1200">
+
+							<div class="nurse__info-item nurse__info-item2" data-aos="zoom-in-left" data-aos-delay="1000">
 								<img src="./images/nurse-item-img2.svg" alt="">
 								<div class="nurse__info-text-wrap">
 									<p class="nurse__item-title">БОЛЕЕ 2000</p>
 									<span class="nurse__info-text">видов исследований</span>
 								</div>
 							</div>
-							<div class="nurse__info-item" data-aos="zoom-in-left" data-aos-delay="1500">
+
+							<div class="nurse__info-item" data-aos="zoom-in-left" data-aos-delay="1100">
 								<img src="./images/nurse-item-img3.svg" alt="">
 								<div class="nurse__info-text-wrap">
 									<p class="nurse__item-title">БОЛЕЕ чем в 20 городах</p>
@@ -382,10 +438,10 @@
 				</div>
 			</section>
 
-			<section class="info-cards" data-scene>
+			<section class="info-cards">
 				<div class="container">
 					<div class="info__cards-wrap">
-						<div class="info__card" data-aos="fade-up" data-aos-delay="500">
+						<div class="info__card">
 							<a href="#!" class="info__card-img"><img src="./images/info-card-img1.png" alt=""></a>
 							<div class="info__card-content">
 								<p class="info__card-title">
@@ -394,7 +450,7 @@
 								<a href="articles-open.html" class="info__card-link">Читать</a>
 							</div>
 						</div>
-						<div class="info__card" data-aos="fade-up" data-aos-delay="800">
+						<div class="info__card">
 							<a href="#!" class="info__card-img"><img src="./images/info-card-img2.png" alt=""></a>
 							<div class="info__card-content">
 								<p class="info__card-title">
@@ -403,13 +459,51 @@
 								<a href="articles-open.html" class="info__card-link">Читать</a>
 							</div>
 						</div>
-						<a href="#!" class="info__card-btn sec-btn-white" data-aos="fade-up"
-							data-aos-delay="1100">Посмотреть все</a>
+
+						<div class="info__card">
+							<a href="#!" class="info__card-img"><img src="./images/info-card-img1.png" alt=""></a>
+							<div class="info__card-content">
+								<p class="info__card-title">
+									Как полезная пища влияет на наш организм
+								</p>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
+							</div>
+						</div>
+						<div class="info__card">
+							<a href="#!" class="info__card-img"><img src="./images/info-card-img2.png" alt=""></a>
+							<div class="info__card-content">
+								<p class="info__card-title">
+									Как полезная пища влияет на наш организм
+								</p>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
+							</div>
+						</div>
+						<div class="info__card">
+							<a href="#!" class="info__card-img"><img src="./images/info-card-img1.png" alt=""></a>
+							<div class="info__card-content">
+								<p class="info__card-title">
+									Как полезная пища влияет на наш организм
+								</p>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
+							</div>
+						</div>
+						<div class="info__card">
+							<a href="#!" class="info__card-img"><img src="./images/info-card-img2.png" alt=""></a>
+							<div class="info__card-content">
+								<p class="info__card-title">
+									Как полезная пища влияет на наш организм
+								</p>
+								<a href="articles-open.html" class="info__card-link">Читать</a>
+							</div>
+						</div>
+
+						<a href="#!" class="info__card-btn sec-btn-white" id="load-More">Показать еще</a>
+						<a href="#!" class="info__card-btn sec-btn-white" id="load-Less">Скрывать</a>
 					</div>
 				</div>
 			</section>
 
-			<section class="acordion-info" data-scene>
+			<section class="acordion-info">
 				<div class="container">
 					<div class="acordion__info-sec">
 
@@ -456,7 +550,7 @@
 				</div>
 			</section>
 
-			<section class="socicial-media" data-scene>
+			<section class="socicial-media">
 				<div class="container">
 					<div class="socicial__media-content">
 						<div class="socicial__media-info" data-aos="fade-up-right" data-aos="zoom-out-down"
@@ -487,7 +581,7 @@
 
 		</main>
 
-		<footer class="footer" data-scene>
+		<footer class="footer">
 			<div class="container">
 				<div class="footer__content">
 					<div class="footer__socicial" data-aos="fade-up" data-aos-delay="500">
@@ -540,7 +634,7 @@
 			</div>
 		</footer>
 
-		<div class="ftr-copyright" data-scene>
+		<div class="ftr-copyright">
 			<div class="container">
 				<p class="ftr-copyright-text">Политика в отношении обработки персональных данных</p>
 			</div>
@@ -695,10 +789,7 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
-	<!-- rolly js | cdn js link -->
-	<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
-	<!-- aos js cdn link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
