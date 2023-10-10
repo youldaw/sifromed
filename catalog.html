@@ -2,38 +2,45 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
-    <!-- rolly js | css link -->
-	<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
-	<!-- aos css cdn link -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>ЦИФРОЛАБ</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header" data-scene>
+        <header class="header">
 			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
 				<div class="header__nav">
-					<a href="#!" class="logo">ЦИФРОМЕД</a>
+					<div class="header__fixed-search">
+						<button type="submit" class="main-search-btn"><img src="images/icons/search2.svg" alt=""></button>
+						<input type="search" placeholder="Исследование" class="main-search-inp">
+					</div>
+					<a href="#!" class="logo">ЦИФРОЛАБ</a>
 
 					<div class="header__menu-tabs">
-						<a href="basket.html" class="header__menu-shopping">
-							<img src="./images/icons/shoppingcart.svg" alt="">
+						<a href="basket.html" class="cart header__menu-shopping">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+								<path d="M5.50808 13.0915C5.50701 13.0857 5.50604 13.0799 5.50518 13.0741L4.28506 5.7534C4.16451 5.03012 3.53873 4.5 2.80547 4.5H2.49973C2.22358 4.5 1.99973 4.27614 1.99973 4C1.99973 3.72386 2.22358 3.5 2.49973 3.5H2.80547C3.99729 3.5 5.01875 4.34029 5.25498 5.5H19.6626C19.9948 5.5 20.2346 5.81795 20.1433 6.13736L18.1434 13.1374C18.082 13.352 17.8858 13.5 17.6626 13.5H6.58995L6.71439 14.2466C6.83494 14.9699 7.46072 15.5 8.19398 15.5H19.4997C19.7759 15.5 19.9997 15.7239 19.9997 16C19.9997 16.2761 19.7759 16.5 19.4997 16.5H8.19398C6.97188 16.5 5.92891 15.6165 5.72799 14.411L5.50808 13.0915ZM5.42329 6.5L6.42329 12.5H17.2854L18.9997 6.5H5.42329ZM7.99972 21.5C6.89516 21.5 5.99972 20.6046 5.99972 19.5C5.99972 18.3954 6.89516 17.5 7.99972 17.5C9.10429 17.5 9.99972 18.3954 9.99972 19.5C9.99972 20.6046 9.10429 21.5 7.99972 21.5ZM7.99972 20.5C8.55201 20.5 8.99972 20.0523 8.99972 19.5C8.99972 18.9477 8.55201 18.5 7.99972 18.5C7.44744 18.5 6.99972 18.9477 6.99972 19.5C6.99972 20.0523 7.44744 20.5 7.99972 20.5ZM16.9997 21.5C15.8952 21.5 14.9997 20.6046 14.9997 19.5C14.9997 18.3954 15.8952 17.5 16.9997 17.5C18.1043 17.5 18.9997 18.3954 18.9997 19.5C18.9997 20.6046 18.1043 21.5 16.9997 21.5ZM16.9997 20.5C17.552 20.5 17.9997 20.0523 17.9997 19.5C17.9997 18.9477 17.552 18.5 16.9997 18.5C16.4474 18.5 15.9997 18.9477 15.9997 19.5C15.9997 20.0523 16.4474 20.5 16.9997 20.5Z" fill="white"/>
+							</svg>
 						</a>
 						<a href="#!" class="header__menu-person" data-bs-target="#formAuthorizeModal"
 							data-bs-toggle="modal">
-							<img src="./images/icons/person.svg" alt="">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+								<path d="M12.0003 12.4751C10.9003 12.4751 10.0003 12.1251 9.30027 11.4251C8.60027 10.7251 8.25027 9.8251 8.25027 8.7251C8.25027 7.6251 8.60027 6.7251 9.30027 6.0251C10.0003 5.3251 10.9003 4.9751 12.0003 4.9751C13.1003 4.9751 14.0003 5.3251 14.7003 6.0251C15.4003 6.7251 15.7503 7.6251 15.7503 8.7251C15.7503 9.8251 15.4003 10.7251 14.7003 11.4251C14.0003 12.1251 13.1003 12.4751 12.0003 12.4751ZM18.5003 20.5001H5.50027C5.08777 20.5001 4.73465 20.3532 4.4409 20.0595C4.14715 19.7657 4.00027 19.4126 4.00027 19.0001V18.1501C4.00027 17.5168 4.15861 16.9751 4.47527 16.5251C4.79194 16.0751 5.20027 15.7334 5.70027 15.5001C6.81694 15.0001 7.88777 14.6251 8.91277 14.3751C9.93777 14.1251 10.9669 14.0001 12.0003 14.0001C13.0336 14.0001 14.0586 14.1293 15.0753 14.3876C16.0919 14.6459 17.1579 15.0184 18.2733 15.5049C18.795 15.7404 19.2132 16.0818 19.528 16.5291C19.8429 16.9764 20.0003 17.5168 20.0003 18.1501V19.0001C20.0003 19.4126 19.8534 19.7657 19.5596 20.0595C19.2659 20.3532 18.9128 20.5001 18.5003 20.5001ZM5.50027 19.0001H18.5003V18.1501C18.5003 17.8834 18.4211 17.6293 18.2628 17.3876C18.1044 17.1459 17.9086 16.9668 17.6753 16.8501C16.6086 16.3334 15.6336 15.9793 14.7503 15.7876C13.8669 15.5959 12.9503 15.5001 12.0003 15.5001C11.0503 15.5001 10.1253 15.5959 9.22527 15.7876C8.32527 15.9793 7.35027 16.3334 6.30027 16.8501C6.06694 16.9668 5.87527 17.1459 5.72527 17.3876C5.57527 17.6293 5.50027 17.8834 5.50027 18.1501V19.0001ZM12.0003 10.9751C12.6503 10.9751 13.1878 10.7626 13.6128 10.3376C14.0378 9.9126 14.2503 9.3751 14.2503 8.7251C14.2503 8.0751 14.0378 7.5376 13.6128 7.1126C13.1878 6.6876 12.6503 6.4751 12.0003 6.4751C11.3503 6.4751 10.8128 6.6876 10.3878 7.1126C9.96277 7.5376 9.75027 8.0751 9.75027 8.7251C9.75027 9.3751 9.96277 9.9126 10.3878 10.3376C10.8128 10.7626 11.3503 10.9751 12.0003 10.9751Z" fill="white"/>
+							</svg>
 						</a>
 						<a href="#!" class="header__menu-bars menu-add">
-							<img src="./images/icons/bars.svg" alt="">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.5C0.44772 0.5 0 0.94772 0 1.5C0 2.05228 0.44772 2.5 1 2.5H19C19.5523 2.5 20 2.05228 20 1.5C20 0.94772 19.5523 0.5 19 0.5H1ZM0 7.5C0 6.9477 0.44772 6.5 1 6.5H19C19.5523 6.5 20 6.9477 20 7.5C20 8.0523 19.5523 8.5 19 8.5H1C0.44772 8.5 0 8.0523 0 7.5ZM0 13.5C0 12.9477 0.44772 12.5 1 12.5H19C19.5523 12.5 20 12.9477 20 13.5C20 14.0523 19.5523 14.5 19 14.5H1C0.44772 14.5 0 14.0523 0 13.5Z" fill="white"/>
+							</svg>
 						</a>
 					</div>
 				</div>
@@ -41,14 +48,11 @@
 				<div class="header__menu-wrap">
 					<div class="modal__menu">
 						<button class="modal__menu-close menu-add">
-							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-								fill="none">
-								<path
-									d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
-									fill="#3A2B6A" />
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+								<path d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z" fill="#3A2B6A" />
 							</svg>
 						</button>
-						<a href="#!" class="modal__menu-logo">ЦИФРОМЕД</a>
+						<a href="#!" class="modal__menu-logo">ЦИФРОЛАБ</a>
 						<div class="modal__menu-nav">
 							<a href="#!" class="modal__nav-link">Результаты</a>
 							<a href="#!" class="modal__nav-link">Анализы</a>
@@ -71,70 +75,8 @@
 			</div>
 		</header>
 
-		<div class="header__fixed">
-            <div class="container">
-                <div class="header__fixed-content">
-                    <div class="header__fixed-search">
-                        <button type="submit" class="main-search-btn"><img src="images/icons/search2.svg" alt=""></button>
-                        <input type="search" placeholder="Исследование" class="main-search-inp">
-                    </div>
-
-                    <div class="header__menu-tabs">
-                        <a href="basket.html" class="header__menu-shopping">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M5.50811 13.0915C5.50704 13.0857 5.50607 13.0799 5.50521 13.0741L4.28509 5.7534C4.16455 5.03012 3.53876 4.5 2.8055 4.5H2.49976C2.22361 4.5 1.99976 4.27614 1.99976 4C1.99976 3.72386 2.22361 3.5 2.49976 3.5H2.8055C3.99732 3.5 5.01878 4.34029 5.25501 5.5H19.6626C19.9948 5.5 20.2346 5.81795 20.1434 6.13736L18.1434 13.1374C18.0821 13.352 17.8859 13.5 17.6626 13.5H6.58999L6.71442 14.2466C6.83497 14.9699 7.46075 15.5 8.19401 15.5H19.4998C19.7759 15.5 19.9998 15.7239 19.9998 16C19.9998 16.2761 19.7759 16.5 19.4998 16.5H8.19401C6.97191 16.5 5.92894 15.6165 5.72802 14.411L5.50811 13.0915ZM5.42332 6.5L6.42332 12.5H17.2855L18.9998 6.5H5.42332ZM7.99976 21.5C6.89519 21.5 5.99976 20.6046 5.99976 19.5C5.99976 18.3954 6.89519 17.5 7.99976 17.5C9.10432 17.5 9.99975 18.3954 9.99975 19.5C9.99975 20.6046 9.10432 21.5 7.99976 21.5ZM7.99976 20.5C8.55204 20.5 8.99975 20.0523 8.99975 19.5C8.99975 18.9477 8.55204 18.5 7.99976 18.5C7.44747 18.5 6.99976 18.9477 6.99976 19.5C6.99976 20.0523 7.44747 20.5 7.99976 20.5ZM16.9998 21.5C15.8952 21.5 14.9998 20.6046 14.9998 19.5C14.9998 18.3954 15.8952 17.5 16.9998 17.5C18.1043 17.5 18.9998 18.3954 18.9998 19.5C18.9998 20.6046 18.1043 21.5 16.9998 21.5ZM16.9998 20.5C17.552 20.5 17.9998 20.0523 17.9998 19.5C17.9998 18.9477 17.552 18.5 16.9998 18.5C16.4475 18.5 15.9998 18.9477 15.9998 19.5C15.9998 20.0523 16.4475 20.5 16.9998 20.5Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                        <a href="#!" class="header__menu-person" data-bs-target="#formAuthorizeModal"
-                            data-bs-toggle="modal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M12.0002 12.4751C10.9002 12.4751 10.0002 12.1251 9.30024 11.4251C8.60024 10.7251 8.25024 9.8251 8.25024 8.7251C8.25024 7.6251 8.60024 6.7251 9.30024 6.0251C10.0002 5.3251 10.9002 4.9751 12.0002 4.9751C13.1002 4.9751 14.0002 5.3251 14.7002 6.0251C15.4002 6.7251 15.7502 7.6251 15.7502 8.7251C15.7502 9.8251 15.4002 10.7251 14.7002 11.4251C14.0002 12.1251 13.1002 12.4751 12.0002 12.4751ZM18.5002 20.5001H5.50024C5.08774 20.5001 4.73462 20.3532 4.44087 20.0595C4.14712 19.7657 4.00024 19.4126 4.00024 19.0001V18.1501C4.00024 17.5168 4.15858 16.9751 4.47524 16.5251C4.79191 16.0751 5.20024 15.7334 5.70024 15.5001C6.81691 15.0001 7.88774 14.6251 8.91274 14.3751C9.93774 14.1251 10.9669 14.0001 12.0002 14.0001C13.0336 14.0001 14.0586 14.1293 15.0752 14.3876C16.0919 14.6459 17.1579 15.0184 18.2733 15.5049C18.795 15.7404 19.2132 16.0818 19.528 16.5291C19.8428 16.9764 20.0002 17.5168 20.0002 18.1501V19.0001C20.0002 19.4126 19.8534 19.7657 19.5596 20.0595C19.2659 20.3532 18.9127 20.5001 18.5002 20.5001ZM5.50024 19.0001H18.5002V18.1501C18.5002 17.8834 18.4211 17.6293 18.2627 17.3876C18.1044 17.1459 17.9086 16.9668 17.6752 16.8501C16.6086 16.3334 15.6336 15.9793 14.7502 15.7876C13.8669 15.5959 12.9502 15.5001 12.0002 15.5001C11.0502 15.5001 10.1252 15.5959 9.22524 15.7876C8.32524 15.9793 7.35024 16.3334 6.30024 16.8501C6.06691 16.9668 5.87524 17.1459 5.72524 17.3876C5.57524 17.6293 5.50024 17.8834 5.50024 18.1501V19.0001ZM12.0002 10.9751C12.6502 10.9751 13.1877 10.7626 13.6127 10.3376C14.0377 9.9126 14.2502 9.3751 14.2502 8.7251C14.2502 8.0751 14.0377 7.5376 13.6127 7.1126C13.1877 6.6876 12.6502 6.4751 12.0002 6.4751C11.3502 6.4751 10.8127 6.6876 10.3877 7.1126C9.96274 7.5376 9.75024 8.0751 9.75024 8.7251C9.75024 9.3751 9.96274 9.9126 10.3877 10.3376C10.8127 10.7626 11.3502 10.9751 12.0002 10.9751Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                        <a href="#!" class="header__menu-bars menu-add">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.5C0.44772 0.5 0 0.94772 0 1.5C0 2.05228 0.44772 2.5 1 2.5H19C19.5523 2.5 20 2.05228 20 1.5C20 0.94772 19.5523 0.5 19 0.5H1ZM0 7.5C0 6.9477 0.44772 6.5 1 6.5H19C19.5523 6.5 20 6.9477 20 7.5C20 8.0523 19.5523 8.5 19 8.5H1C0.44772 8.5 0 8.0523 0 7.5ZM0 13.5C0 12.9477 0.44772 12.5 1 12.5H19C19.5523 12.5 20 12.9477 20 13.5C20 14.0523 19.5523 14.5 19 14.5H1C0.44772 14.5 0 14.0523 0 13.5Z" fill="#3A2B6A"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-				<div class="header__menu-wrap">
-					<div class="modal__menu">
-						<button class="modal__menu-close menu-add">
-							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-								fill="none">
-								<path
-									d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
-									fill="#3A2B6A" />
-							</svg>
-						</button>
-						<a href="#!" class="modal__menu-logo">ЦИФРОМЕД</a>
-						<div class="modal__menu-nav">
-							<a href="#!" class="modal__nav-link">Результаты</a>
-							<a href="#!" class="modal__nav-link">Анализы</a>
-							<a href="#!" class="modal__nav-link">Акции</a>
-							<a href="#!" class="modal__nav-link">Адреса</a>
-							<a href="#!" class="modal__nav-link">Отзывы</a>
-							<a href="#!" class="modal__nav-link">Новости</a>
-							<a href="#!" class="modal__nav-link">Блог о здоровье</a>
-							<a href="#!" class="modal__nav-link">FaQ</a>
-						</div>
-						<div class="modal__menu-socicial">
-							<a href="#!"><img src="./images/icons/modal-menu-icon1.svg" alt=""></a>
-							<a href="#!"><img src="./images/icons/modal-menu-icon2.svg" alt=""></a>
-							<a href="#!"><img src="./images/icons/modal-menu-icon3.svg" alt=""></a>
-						</div>
-						<a href="#!" class="modal__menu-privacy">Политика в отношении обработки персональных данных</a>
-						<p class="modal__menu-copyright">ⓒ 2005-2023 ООО “КДЛ” Все права защищены. </p>
-					</div>
-				</div>
-            </div>
-        </div>
-
         <main>
-
-            <section class="catolog-sec" data-scene>
+            <section class="catolog-sec">
                 <div class="container">
                     <img src="./images/catolog-bg1.svg" alt="" class="catolog-bg">
                     <div class="catolog__content">
@@ -221,7 +163,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
     </div>
 
@@ -267,56 +208,56 @@
 
     <!-- modal registration -->
 	<div class="modal__form modal__registration">
-		<div class="modal fade" id="formRegistrationModal" aria-hidden="true"
-			aria-labelledby="formRegistrationModalLabel" tabindex="-1">
+		<div class="modal fade" id="formRegistrationModal" aria-hidden="true" aria-labelledby="formRegistrationModalLabel" tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal__authorization-title">Авторизация</h5>
 						<button type="button" class="modal__menu-close" data-bs-dismiss="modal">
-							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-								fill="none">
-								<path
-									d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
-									fill="#3A2B6A" />
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+								<path d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z" fill="#3A2B6A" />
 							</svg>
 						</button>
 					</div>
 					<div class="modal-body">
 						<div class="modal__form-links">
-							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal"
-								data-bs-toggle="modal">Войти</a>
+							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal" data-bs-toggle="modal">Войти</a>
 							<a href="#!" class="modal__form-link active">Зарегистрироваться</a>
 						</div>
 						<form>
 							<div class="modal__form-wrap">
-								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов"
-									required>
+								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
 								<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
-								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович"
-									required>
+								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович" required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
 									<label for="formCheck1">Нет отчества</label>
 								</div>
-								<input type="text" name="gender" class="modal__form-inp" placeholder="Пол" required>
-								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88"
-									required>
-								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000"
-									required>
-								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
-									required>
+
+								<select name="sex" id="sex" class="modal__form-inp">
+									<option value="male">Пол</option>
+									<option value="female">Жен</option>
+								</select>
+
+								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck2">
-									<label for="formCheck2"><b>Согласен с</b> <a href="#!">политикой в отношении персональных данных</a></label>
+									<label for="formCheck2">
+										<b>Согласен с </b> 
+										<a href="#!"> политикой в отношении персональных данных</a>
+									</label>
 								</div>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck3">
-									<label for="formCheck3"><b>Согласен с</b> <a href="#!">условиями пользования личного кабинета</a></label>
+									<label for="formCheck3">
+										<b>Согласен с </b>
+										<a href="#!"> условиями пользования личного кабинета</a>
+									</label>
 								</div>
 							</div>
-							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
-								data-bs-target="#modalMini1">Далее</button>
+							<button type="submit" class="modal__form-btn" data-bs-toggle="modal" data-bs-target="#modalMini1">Далее</button>
 						</form>
 					</div>
 				</div>
@@ -342,16 +283,12 @@
     </div>
 
 
-
     <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="libs/bootstrap5/bootstrap.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- rolly js | cdn js link -->
-	<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
-	<!-- aos js cdn link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/script.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
