@@ -131,6 +131,24 @@ $(function () {
     $("#show-less").hide();
   });
 
+  // catalog analize show-more content
+  $(".cat-analize").slice(0, 5).show();
+  $("#show-more").on('click', function (e) {
+    e.preventDefault();
+    $(".cat-analize:hidden").slice(0, 5).slideDown();
+    if ($(".cat-analize:hidden").length == 0) {
+      $("#show-less").fadeIn('slow');
+      $("#show-more").hide();
+      // $("#loadMore").text('Load only the first 4');
+    }
+  });
+  $("#show-less").on('click', function (e) {
+    e.preventDefault();
+    $('.cat-analize:not(:lt(5))').fadeOut();
+    $("#show-more").fadeIn('slow');
+    $("#show-less").hide();
+  });
+
 
   // basket(cart) delete card
   $('.delete-btn').on('click', function(){
@@ -181,6 +199,11 @@ $(function () {
     autoplay: {
       delay: 2000,
     },
+  });
+
+  $('.date-btn').datepicker({
+    language: "ru",
+    orientation: 'auto',
   });
 
 
