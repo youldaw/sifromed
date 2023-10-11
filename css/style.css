@@ -2227,16 +2227,21 @@ header .logo{
 	line-height: normal;
 	cursor: pointer;
 }
+.select-drop.white .custom-select {
+	width: 100%;
+	text-align: left;
+}
 .select-drop.white .custom-select-trigger {
 	border-radius: 60px;
 	border: 0.5px solid #3A2B6A;
 	background: rgba(255, 253, 253, 0.00);
-}
-.select-drop.white .custom-select-trigger.white {
 	color: #C9C9D9;
 	font-size: 12px;
 	font-weight: 300;
+	width: 100%;
+	padding: 9px 15px;
 }
+
 .custom-select-trigger:after {
 	position: absolute;
 	display: block;
@@ -2249,6 +2254,11 @@ header .logo{
 	transform: rotate(45deg) translateY(-50%);
 	transition: all .4s ease-in-out;
 	transform-origin: 50% 0;
+}
+.select-drop.white .custom-select-trigger::after {
+	border-bottom: 1px solid #C9C9D9;
+	border-right: 1px solid #C9C9D9;
+	background: transparent;
 }
 .custom-select.opened .custom-select-trigger:after {
 	margin-top: 3px;

@@ -319,10 +319,14 @@
 									<label for="formCheck1">Нет отчества</label>
 								</div>
 
-								<select name="sex" id="sex" class="modal__form-inp">
-									<option value="male">Пол</option>
-									<option value="female">Жен</option>
-								</select>
+								<div class="select-drop white mt-0">
+									<select class="custom-select sources" name="sex" id="sex" placeholder="Пол">
+										<option value="female">Жен.</option>
+										<option value="male">Муж.</option>
+									</select>
+								</div>
+
+
 
 								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
 								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
@@ -342,7 +346,8 @@
 									</label>
 								</div>
 							</div>
-							<button type="submit" class="modal__form-btn" data-bs-toggle="modal" data-bs-target="#modalMini1">Далее</button>
+							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
+								data-bs-target="#modalMini1">Далее</button>
 						</form>
 					</div>
 				</div>

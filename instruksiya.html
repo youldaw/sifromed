@@ -203,54 +203,48 @@
 
 	<!-- modal registration -->
 	<div class="modal__form modal__registration">
-		<div class="modal fade" id="formRegistrationModal" aria-hidden="true"
-			aria-labelledby="formRegistrationModalLabel" tabindex="-1">
+		<div class="modal fade" id="formRegistrationModal" aria-hidden="true" aria-labelledby="formRegistrationModalLabel" tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal__authorization-title">Авторизация</h5>
 						<button type="button" class="modal__menu-close" data-bs-dismiss="modal">
-							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-								fill="none">
-								<path
-									d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z"
-									fill="#3A2B6A" />
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+								<path d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z" fill="#3A2B6A" />
 							</svg>
 						</button>
 					</div>
 					<div class="modal-body">
 						<div class="modal__form-links">
-							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal"
-								data-bs-toggle="modal">Войти</a>
+							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal" data-bs-toggle="modal">Войти</a>
 							<a href="#!" class="modal__form-link active">Зарегистрироваться</a>
 						</div>
 						<form>
 							<div class="modal__form-wrap">
-								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов"
-									required>
+								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
 								<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
-								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович"
-									required>
+								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович" required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
 									<label for="formCheck1">Нет отчества</label>
 								</div>
 
-								<select name="sex" id="sex" class="modal__form-inp">
-									<option value="male">Пол</option>
-									<option value="female">Жен</option>
-								</select>
+								<div class="select-drop white mt-0">
+									<select class="custom-select sources" name="sex" id="sex" placeholder="Пол">
+										<option value="female">Жен.</option>
+										<option value="male">Муж.</option>
+									</select>
+								</div>
 
-								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88"
-									required>
-								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000"
-									required>
-								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail"
-									required>
+
+
+								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck2">
 									<label for="formCheck2">
-										<b>Согласен с </b>
+										<b>Согласен с </b> 
 										<a href="#!"> политикой в отношении персональных данных</a>
 									</label>
 								</div>
