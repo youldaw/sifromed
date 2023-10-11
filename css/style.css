@@ -638,7 +638,7 @@ header .logo{
 .socicial__media-content .socicial__media-links{
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 8px;
 }
 .socicial__media-content .socicial__media-link{
 	display: flex;
@@ -647,6 +647,10 @@ header .logo{
 	color: #FFF;
 	font-size: 12px;
 	font-weight: 500;
+}
+.socicial__media-content .socicial__media-link .icon svg {
+	height: 20px;
+	width: 20px;
 }
 /* Socicial medi end */
 
@@ -1624,6 +1628,11 @@ header .logo{
 .modal__registration .modal-content{
 	border-radius: 50px;
 }
+.modal__registration .custom-select-wrapper {
+	display: block;
+	width: 100%;
+}
+
 .modal__form .modal-header{
 	border: 0;
 	padding: 0;
@@ -1899,9 +1908,8 @@ header .logo{
 
 /* Footer start */
 .footer{
-	padding: 11px 0px 19px;
+	padding-top: 10px;
 	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
 }
 .footer .footer__content{
 	display: flex;
@@ -1920,10 +1928,14 @@ header .logo{
 	gap: 12px;
 }
 .footer__socicial .ftr__socicial-icon{
-	transition: .5s ease-in;
+	transition: .3s ease-in;
+}
+.footer__socicial .ftr__socicial-icon svg {
+	height: 28px;
+	width: 28px;
 }
 .footer__socicial .ftr__socicial-icon:hover{
-	transform: rotate(-360deg) scale(1.1);
+	transform: scale(1.1);
 }
 .footer__content .footer__info{
 	display: flex;
@@ -1968,7 +1980,9 @@ header .logo{
 }
 
 .ftr-copyright{
-	padding: 6px 0px 17px;
+	padding: 5px 0px 15px;
+	margin-top: 20px;
+	border-top: 1px solid #fff;
 }
 .ftr-copyright .ftr-copyright-text{
 	color: #FFF;
@@ -2213,6 +2227,16 @@ header .logo{
 	line-height: normal;
 	cursor: pointer;
 }
+.select-drop.white .custom-select-trigger {
+	border-radius: 60px;
+	border: 0.5px solid #3A2B6A;
+	background: rgba(255, 253, 253, 0.00);
+}
+.select-drop.white .custom-select-trigger.white {
+	color: #C9C9D9;
+	font-size: 12px;
+	font-weight: 300;
+}
 .custom-select-trigger:after {
 	position: absolute;
 	display: block;
@@ -2295,3 +2319,7 @@ header .logo{
 .custom-option.selection {
 	background: #f9f9f9;
 }
+
+
+
+/* @media screen and (max-width: 1400px) */
