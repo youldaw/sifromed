@@ -349,6 +349,38 @@ header .logo{
 }
 /* Main info items end */
 
+/* Main banner start */
+.main__banner{
+	background-image: url(../images/main__banner-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	margin: 20px 0 60px;
+	padding: 33px 0px 26px;
+}
+.main__banner .main__banner-content{
+	max-width: 265px;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	padding: 20px 10px;
+	border-radius: 6.825px;
+	border: 0.398px solid rgba(216, 216, 216, 0.00);
+	background: radial-gradient(231% 135.8% at 0.9% 2.98%, #9A15AF 0%, rgba(117, 117, 117, 0.30) 27.03%, rgba(0, 0, 0, 0.00) 100%);
+	backdrop-filter: blur(5.972222328186035px);
+}
+.main__banner .main__banner-content .main__banner-title{
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 131%;
+}
+.main__banner .main__banner-content .main__banner-logo{
+	width: 100px;
+	margin-left: auto;
+}
+/* Main banner end */
+
 /* Digital lab start */
 .digital-lab{
 	background-image: url(../images/diggital-lab-bg.png);
@@ -359,7 +391,7 @@ header .logo{
 .digital-lab .digital__lab-content{
 	display: flex;
 	flex-direction: column;
-	gap: 98px;
+	gap: 31px;
 }
 .digital__lab-content .digital__lab-title{
 	text-align: center;
@@ -370,81 +402,31 @@ header .logo{
 	max-width: 311px;
 	margin: 28px auto 0;
 }
-.digital__lab-content .digital__lab-items{
-	display: flex;
-	flex-direction: column;
-	gap: 27px;
-}
-.digital__lab-content .digital__lab-item{
+.digital__lab-content .digital__lab-video{
 	position: relative;
-	display: flex;
-	align-items: center;
-	gap: 11px;
-	background-color: #fff;
-	max-width: 285px;
-	height: 74px;
-	border-radius: 28px;
-	padding: 15px;
 }
-.digital__lab-content .digital__lab-item1,
-.digital__lab-content .digital__lab-item3{
-	justify-content: end;
-	margin-left: 100px;
-	box-shadow: 4px 0px 1px 0px #00000034;
+.digital__lab-content .digital__lab-video .digital-lab-img{
+	border-radius: 30px;
+	width: 100%;
 }
-.digital__lab-content .digital__lab-item2,
-.digital__lab-content .digital__lab-item4{
-	margin-left: 22px;
-	box-shadow: -5px 0px 1px 0px #00000034;
-}
-.digital__lab-content .digital__lab-item .digital__lab-line{
-	width: 1px;
-	height: 44px;
-	background-color: #3A2B6A;
-}
-.digital__lab-content .digital__lab-item .digital__item-text{
-	color: #3A2B6A;
-	font-size: 14px;
-	font-weight: 600;
-}
-.digital__lab-content .digital__lab-item3 .digital__item-text{
-	max-width: 100px;
-}
-.digital__lab-content .digital__lab-item4 .digital__item-text {
-	max-width: 116px;
-}
-.digital__lab-content .digital__lab-item .digital__item-num{
-	color: #3A2B6A;
-	text-align: center;
+.digital__lab-content .digital__lab-video .digital-play{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.48);
+	width: 111px;
+	height: 111px;
+	border-radius: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 13.264px;
-	font-weight: 600;
-	width: 24px;
-	height: 24px;
-	border-radius: 50px;
-	border: 1px solid #3A2B6A;
 }
-.digital__lab-content .digital__lab-item .digital-lab-img{
-	position: absolute;
-	object-fit: contain;
-}
-.digital__lab-content .digital__lab-item1 .digital-lab-img,
-.digital__lab-content .digital__lab-item3 .digital-lab-img{
-	top: -75px;
-	left: -10px;
-}
-.digital__lab-content .digital__lab-item2 .digital-lab-img{
-	right: -18px;
-	top: -75px;
-}
-.digital__lab-content .digital__lab-item4 .digital-lab-img{
-	right: -9px;
-    top: -56px;
+.digital__lab-content .digital-play img{
+	margin-right: -10px;
 }
 /* Digital lab end */
-
 
 /* Location sec start */
 .location-sec{
@@ -2003,6 +1985,7 @@ header .logo{
 .header__menu-shopping {
 	position: relative;
 }
+
 [data-count]:after {
   position: absolute;
   top: -8px;
@@ -2290,6 +2273,7 @@ header .logo{
 	visibility: visible;
 	pointer-events: all;
 	transform: translateY(0);
+	margin: 4px 0 0 0;
 }
 .custom-options:before {
 	position: absolute;

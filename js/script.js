@@ -344,7 +344,8 @@ $(function () {
 
 
 AOS.init({
-  duration: 1000 //global duration
+  // duration: 1000 //global duration
+  disable: true,
 });
 
 
