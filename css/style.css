@@ -1419,16 +1419,29 @@ header .logo{
 }
 
 .manual-card .card1-img1 {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	z-index: 2;
 }
 
-.manual-card .card1-img2 {
+.manual-card.one .card1-img1 {
 	position: absolute;
-	bottom: 0;
+	width: 168px;
+	height: 249px;
+	bottom: -25px;
+    right: -30px;
+}
+.manual-card.one .card1-img2 {
+	position: absolute;
+	width: 252px;
+	height: 208px;
+	bottom: -40px;
 	right: 14px;
+}
+.manual-card.two .card1-img1 {
+	position: absolute;
+	width: 246px;
+	height: 244px;
+	right: -25px;
+	bottom: -50px;
 }
 
 .articles-back-btn {
