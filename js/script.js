@@ -1,6 +1,5 @@
 $(function () {
 
-
   // Header menu
   $('.header .menu-add').on('click', function (e) {
     e.preventDefault();
@@ -30,7 +29,7 @@ $(function () {
     cartCounter++;
     var buttonCount = setTimeout(function () {
       $('.header__menu-shopping').attr('data-count', cartCounter);
-    }, 500);
+    }, 100);
   })
 
   // add to card animation
@@ -151,12 +150,12 @@ $(function () {
 
 
   // basket(cart) delete card
-  $('.delete-btn').on('click', function(){
+  $('.delete-btn').on('click', function () {
     $(this).parent().parent().addClass('d-none');
   });
 
   // basket address
-  $('.choose-address').on('click', function(){
+  $('.choose-address').on('click', function () {
     $('.basket__address').addClass('active');
     $(this).addClass('d-none');
   });
@@ -245,7 +244,12 @@ $(function () {
   });
 
 
+});
 
+
+
+
+$(function () {
   // yandex map
   ymaps.ready(init);
 
@@ -263,9 +267,9 @@ $(function () {
       }, {
         // Опции.
         // Своё изображение иконки метки.
-        iconImageHref: '../images/icons/map-point.png',
+        iconImageHref: '../images/map-icon.svg',
         // Размеры метки.
-        iconImageSize: [32, 36],
+        iconImageSize: [30, 30],
         // Смещение левого верхнего угла иконки относительно
         // iconImageOffset: [33, -42]
       }),
@@ -277,9 +281,9 @@ $(function () {
       }, {
         // Опции.
         // Своё изображение иконки метки.
-        iconImageHref: '../images/icons/map-point.png',
+        iconImageHref: '../images/map-icon.svg',
         // Размеры метки.
-        iconImageSize: [32, 36],
+        iconImageSize: [30, 30],
         // Смещение левого верхнего угла иконки относительно
         // iconImageOffset: [33, -22]
       });
@@ -292,9 +296,9 @@ $(function () {
     }, {
       // Опции.
       // Своё изображение иконки метки.
-      iconImageHref: '../images/icons/map-point.png',
+      iconImageHref: '../images/map-icon.svg',
       // Размеры метки.
-      iconImageSize: [32, 36],
+      iconImageSize: [30, 30],
       // Смещение левого верхнего угла иконки относительно
       // iconImageOffset: [33, -42]
     }),
@@ -307,9 +311,9 @@ $(function () {
       }, {
         // Опции.
         // Своё изображение иконки метки.
-        iconImageHref: '../images/icons/map-point.png',
+        iconImageHref: '../images/map-icon.svg',
         // Размеры метки.
-        iconImageSize: [32, 36],
+        iconImageSize: [30, 30],
         // Смещение левого верхнего угла иконки относительно
         // iconImageOffset: [33, -42]
       }),
@@ -322,9 +326,9 @@ $(function () {
       }, {
         // Опции.
         // Своё изображение иконки метки.
-        iconImageHref: '../images/icons/map-point.png',
+        iconImageHref: '../images/map-icon.svg',
         // Размеры метки.
-        iconImageSize: [32, 36],
+        iconImageSize: [30, 30],
         // Смещение левого верхнего угла иконки относительно
         // iconImageOffset: [33, -42]
       }),
@@ -337,22 +341,7 @@ $(function () {
         .add(myPlacemark4)
         .add(myPlacemark5);
   }
-
-
-
 });
-
-
-AOS.init({
-  // duration: 1000 //global duration
-  disable: true,
-});
-
-
-
-
-
-
 
 
 

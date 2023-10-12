@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/aos.css">
     <link rel="stylesheet icon" type="text/css" href="libs/datepicker/bootstrap-datepicker.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
+			<div class="container">
 				<div class="header__nav">
 					<div class="header__fixed-search">
 						<button type="submit" class="main-search-btn"><img src="images/icons/search2.svg" alt=""></button>
@@ -99,37 +98,36 @@
                 <div class="container">
                     <img src="./images/catolog__description-bg.png" alt="" class="catolog__description-bg">
                     <div class="catolog__description-content">
-                        <div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
+                        <div class="main-search">
                             <button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
                                     alt=""></button>
                             <input type="search" placeholder="Исследование" class="main-search-inp">
                         </div>
 
                         <div class="catolog__description-tabs">
-                            <a href="#!" class="catolog__description-title" data-aos="zoom-out-down" data-aos-delay="800">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17"
-                                    fill="none">
-                                    <path d="M8.33325 15.6667L0.999918 8.33333L8.33325 1" stroke="white"
-                                        stroke-linecap="round" stroke-linejoin="round" />
+                            <a href="#!" class="catolog__description-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect width="24" height="24" rx="12" fill="white" fill-opacity="0.17"/>
+                                    <path d="M14 17L9 12L14 7" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 Глюкоза
                             </a>
 
 
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-delay="1100">
+                                <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                         aria-selected="true">Подготовка
                                     </button>
                                 </li>
-                                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-delay="1300">
+                                <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-profile" type="button" role="tab"
                                         aria-controls="pills-profile" aria-selected="false">Описание
                                     </button>
                                 </li>
-                                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-delay="1500">
+                                <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-contact" type="button" role="tab"
                                         aria-controls="pills-contact" aria-selected="false">Интерпритация
@@ -163,7 +161,7 @@
                                             <div class="catolog__tab-btns">
                                                 <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
                                                     результатов анализа</a>
-                                                <a href="#!" class="catolog__tab-btn sec-btn-white"> В корзину</a>
+                                                <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
                                             </div>
 
                                         </div>
@@ -208,7 +206,7 @@
                                             <div class="catolog__tab-btns">
                                                 <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
                                                     результатов анализа</a>
-                                                <a href="#!" class="catolog__tab-btn sec-btn-white"> В корзину</a>
+                                                <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
                                             </div>
 
                                         </div>
@@ -385,7 +383,7 @@
                                             <div class="catolog__tab-btns">
                                                 <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
                                                     результатов анализа</a>
-                                                <a href="#!" class="catolog__tab-btn sec-btn-white"> В корзину</a>
+                                                <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
                                             </div>
 
                                         </div>
@@ -526,7 +524,6 @@
 	<script src="libs/bootstrap5/popper.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/aos.js"></script>
     <script src="libs/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

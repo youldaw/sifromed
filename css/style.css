@@ -582,6 +582,29 @@ header .logo{
 .catolog__link-item .accordion-button:not(.collapsed)::after {
     transform: rotate(45deg);
 }
+
+.cat-analize-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+.cat-analize-info p {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 600;
+}
+.cat-analize-info span {
+	display: block;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.cat-analize-info:last-child,
+.cat-analize-info span:last-child {
+	margin-bottom: 0;
+}
 /* Acordion info end */
 
 /* Socicial medi start */
@@ -774,7 +797,7 @@ header .logo{
 .catolog__description-content .catolog__description-title{
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 	color: #FFF;
 	font-size: 17.998px;
 	font-weight: 500;
@@ -2067,6 +2090,12 @@ header .logo{
 }
 .catalog-plus .plus-btn:hover svg path {
 	stroke: #3A2B6A;
+}
+.cat-analize {
+	background-image: url(../images/bg-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
 }
 /* ---- */
 .map-modal .map-search-content .map-search {

@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/aos.css">
     <link rel="stylesheet icon" type="text/css" href="libs/datepicker/bootstrap-datepicker.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-			<div class="container" data-aos="zoom-out-down" data-aos-delay="700">
+			<div class="container">
 				<div class="header__nav">
 					<div class="header__fixed-search">
 						<button type="submit" class="main-search-btn"><img src="images/icons/search2.svg" alt=""></button>
@@ -95,25 +94,23 @@
 		</header>
 
         <main>
-            <section class="catolog-sec">
+            <section class="catolog-sec cat-analize">
                 <div class="container">
-                    <img src="./images/catolog-bg1.svg" alt="" class="catolog-bg">
                     <div class="catolog__content">
-                        <div class="main-search" data-aos="zoom-out-down" data-aos-delay="500">
-                            <button type="submit" class="main-search-btn"><img src="./images/icons/search.svg"
-                                    alt=""></button>
+                        <div class="main-search">
+                            <button type="submit" class="main-search-btn">
+                                <img src="./images/icons/search.svg" alt="">
+                            </button>
                             <input type="search" placeholder="Исследование" class="main-search-inp">
                         </div>
 
 						<div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="catolog__link-items">
     
-                                <a href="#!" class="catolog__link-item" data-aos="zoom-in-right" data-aos="zoom-out-down" data-aos-delay="1000">
+                                <div class="catolog__link-item">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="flush-heading1">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse1"
-                                                aria-expanded="false" aria-controls="flush-collapse1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
                                                 <span>
                                                     Анализы по категориям
                                                 </span>
@@ -121,22 +118,79 @@
                                         </h2>
                                         <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
-                                                <p>
-                                                    Placeholder content for this accordion, which is
-                                                    intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                    the first item's accordion body.
-                                                </p>
+                                                <div class="cat-analize-info">
+                                                    <p>A</p>
+                                                    <span>Аллергология</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Б</p>
+                                                    <span>Биохимические исследования крови</span>
+                                                    <span>Биохимические исследования мочи</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Г</p>
+                                                    <span>Гематология</span>
+                                                    <span>Гемостаз</span>
+                                                    <span>Генетические исследования</span>
+                                                    <span>Гистологические исследования</span>
+                                                    <span>Гормональные исследования</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>И</p>
+                                                    <span>Изосерология</span>
+                                                    <span>Иммунологические исследования</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>К</p>
+                                                    <span>Коммерческие профили</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>М</p>
+                                                    <span>Маркеры аутоиммунных заболеваний</span>
+                                                    <span>Микробиологические исследования</span>
+                                                    <span>Молекулярная (ДНК/РКН) диагностика методом ПЦР</span>
+                                                    <span>Молекулярная (ДКН/РНК) диагностика методом ПЦР (кровь)</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>О</p>
+                                                    <span>Общеклинические исследования</span>
+                                                    <span>Онкогематология</span>
+                                                    <span>Онкомаркеры</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>П</p>
+                                                    <span>Программы пренатального скрининга </span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>С</p>
+                                                    <span>Серологические маркеры инфекционных заболеваний</span>
+                                                    <span>Специализированные лабораторные исследования</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Т</p>
+                                                    <span>Тесты</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>У</p>
+                                                    <span>Услуги</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Х</p>
+                                                    <span>Химико-токсикологические исследования</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Ц</p>
+                                                    <span>Цитологические исследования</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
     
-                                <a href="#!" class="catolog__link-item" data-aos="zoom-in-right" data-aos="zoom-out-down" data-aos-delay="1400">
+                                <div class="catolog__link-item">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="flush-heading2">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse2"
-                                                aria-expanded="false" aria-controls="flush-collapse2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
                                                 <span>
                                                     Анализы по заболеваниям
                                                 </span>
@@ -144,38 +198,209 @@
                                         </h2>
                                         <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
-                                                <p>
-                                                    Placeholder content for this accordion, which is
-                                                    intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                    the first item's accordion body.
-                                                </p>
+                                                <div class="cat-analize-info">
+                                                    <p>“</p>
+                                                    <span>“Свинной” грипп</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>C</p>
+                                                    <span>Covid</span>
+                                                    <span>Covid-19</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>T</p>
+                                                    <span>Torch-инфекции</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>T</p>
+                                                    <span>Torch-инфекции</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>А</p>
+                                                    <span>Аллергия</span>
+                                                    <span>Анемия</span>
+                                                    <span>Антифосфолипидный синдром (АФС)</span>
+                                                    <span>Артериальная гипертензия</span>
+                                                    <span>Артрит</span>
+                                                    <span>Атеросклероз</span>
+                                                    <span>Аутоиммунные заболевания</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Б</p>
+                                                    <span>Беременность</span>
+                                                    <span>Беременность (пренатальный скрининг)</span>
+                                                    <span>Бесплодие</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>В</p>
+                                                    <span>Вирусные гепатиты</span>
+                                                    <span>ВИЧ-инфекция</span>
+                                                    <span>Воспалительные заболевания кишечника</span>
+                                                    <span>ВПЧ-инфекция</span>
+                                                    <span>Вредные привычки</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Г</p>
+                                                    <span>Гемобластозы</span>
+                                                    <span>Герпетические инфекции (герпес-вирусы)</span>
+                                                    <span>Гипертоническая болезнь</span>
+                                                    <span>Грибковая инфекция</span>
+                                                    <span>Грибковые инфекции (микозы)</span>
+                                                    <span>Грипп</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Д</p>
+                                                    <span>Демиелинизирующие заболевания</span>
+                                                    <span>Демодекоз</span>
+                                                    <span>Диарея</span>
+                                                    <span>Дисбаланс витаминов</span>
+                                                    <span>Дисбаланс витаминов и микроэлементов</span>
+                                                    <span>Дисбаланс микроэлементов</span>
+                                                    <span>Дифтерия</span>
+                                                    <span>Длительный кашель</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>З</p>
+                                                    <span>Заболевания желудочно-кишечного тракта</span>
+                                                    <span>Заболевания печени</span>
+                                                    <span>Заболевания почек</span>
+                                                    <span>Заболевания предстательной железы</span>
+                                                    <span>Заболевания щитовидной железы</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>И</p>
+                                                    <span>Инфекции</span>
+                                                    <span>ИППП</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>К</p>
+                                                    <span>Кандидоз</span>
+                                                    <span>Коклюш</span>
+                                                    <span>Коронавирусная инфекция</span>
+                                                    <span>Краснуха</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Л</p>
+                                                    <span>Лимфопролиферативные заболевания</span>
+                                                    <span>Листериоз</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Н</p>
+                                                    <span>Нарушение сна</span>
+                                                    <span>Нарушения биоценоза влагалища</span>
+                                                    <span>Нарушения иммунного статуса</span>
+                                                    <span>Нарушения свертывания крови</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>О</p>
+                                                    <span>Обследование перед госпитализацией</span>
+                                                    <span>Онкологические заболевания и онкомаркеры</span>
+                                                    <span>ОРВИ</span>
+                                                    <span>Остеопороз</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>П</p>
+                                                    <span>Паразитарные инвазии (гельминты)</span>
+                                                    <span>Парвовирусная инфекция</span>
+                                                    <span>Пищевая непереносимость</span>
+                                                    <span>Подготовка к беременности</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Р</p>
+                                                    <span>Рак шейки матки</span>
+                                                    <span>Ревматоидный артрит</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>С</p>
+                                                    <span>Сахарный диабет</span>
+                                                    <span>Сердечная недостаточность</span>
+                                                    <span>Сердечно-сосудистые заболевания</span>
+                                                    <span>СИБР</span>
+                                                    <span>Сифилис</span>
+                                                    <span>Столбняк</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Т</p>
+                                                    <span>Токсоплазмоз</span>
+                                                    <span>Туберкулез</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>У</p>
+                                                    <span>Урогенитальные инфекции</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Ц</p>
+                                                    <span>Целиакия</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Э</p>
+                                                    <span>Эпидемический паротит (свинка)</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
     
-                                <a href="#!" class="catolog__link-item" data-aos="zoom-in-right" data-aos="zoom-out-down" data-aos-delay="1800">
+                                <div class="catolog__link-item">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="flush-heading3">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
-                                                aria-expanded="false" aria-controls="flush-collapse3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
                                                 <span>
-                                                    Анализы по органам и системам организма
+                                                    Анализы по органам <br> и системам организма
                                                 </span>
                                             </button>
                                         </h2>
                                         <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
-                                                <p>
-                                                    Placeholder content for this accordion, which is
-                                                    intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                    the first item's accordion body.
-                                                </p>
+                                                <div class="cat-analize-info">
+                                                    <p>Ж</p>
+                                                    <span>Желудочно-кишечный тракт</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>И</p>
+                                                    <span>Иммунная система</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>К</p>
+                                                    <span>Костная система</span>
+                                                    <span>Костно-мышечная система</span>
+                                                    <span>Кроветворение</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Н</p>
+                                                    <span>Надпочечники</span>
+                                                    <span>Нервная система</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>О</p>
+                                                    <span>Обследование (чекап)</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>П</p>
+                                                    <span>Паращитовидная железа</span>
+                                                    <span>Печень</span>
+                                                    <span>Поджелудочная железа</span>
+                                                    <span>Почки</span>
+                                                    <span>Предстательная железа</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Р</p>
+                                                    <span>Репродуктивная система <br>(половые гормоны)</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>С</p>
+                                                    <span>Сердечно-сосудистая система</span>
+                                                    <span>Система гемостаза (свертывание крови)</span>
+                                                    <span>Суставы</span>
+                                                </div>
+                                                <div class="cat-analize-info">
+                                                    <p>Щ</p>
+                                                    <span>Щитовидная железа</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
     
                             </div>
                         </div>
@@ -311,7 +536,6 @@
 	<script src="libs/bootstrap5/popper.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/aos.js"></script>
     <script src="libs/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
