@@ -457,11 +457,17 @@
 							<a href="#!" class="modal__form-link" data-bs-target="#formAuthorizeModal" data-bs-toggle="modal">Войти</a>
 							<a href="#!" class="modal__form-link active">Зарегистрироваться</a>
 						</div>
-						<form>
+						<form action="#!">
 							<div class="modal__form-wrap">
-								<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
-								<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
-								<input type="text" name="familyName" class="modal__form-inp" placeholder="Иванович" required>
+								<div class="form-group">
+									<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
+								</div>
+								<div class="form-group">
+									<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
+								</div>
+								<div class="form-group">
+									<input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович" required>
+								</div>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
 									<label for="formCheck1">Нет отчества</label>
@@ -474,11 +480,16 @@
 									</select>
 								</div>
 
+								<div class="form-group">
+									<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+								</div>
+								<div class="form-group">
+									<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
+								</div>
 
-
-								<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
-								<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
-								<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck2">
 									<label for="formCheck2">
