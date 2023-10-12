@@ -30,7 +30,8 @@ $(function () {
     var buttonCount = setTimeout(function () {
       $('.header__menu-shopping').attr('data-count', cartCounter);
     }, 100);
-  })
+  });
+
 
   // add to card animation
   $('.addToCart').click(function () {
@@ -233,6 +234,8 @@ $(function () {
       },
     },
   });
+
+  
 
 
   // custom select
