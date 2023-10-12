@@ -206,6 +206,35 @@ $(function () {
   });
 
 
+  // comment slide
+  var swiper1 = new Swiper(".comment-slide", {
+    lidesPerView: 1,
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      clickable: true,
+    },
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        // centered: true,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+
+      },
+    },
+  });
+
+
   // custom select
   $(".custom-select").each(function () {
     var classes = $(this).attr("class"),
