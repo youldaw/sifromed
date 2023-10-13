@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="fonts/inter/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/jost/stylesheet.css">
-	<link rel="stylesheet icon" type="text/css" href="css/flatpickr.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/flatpickr.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -133,9 +133,9 @@
                                                 </button>
                                             </div>
 
-                                            <div class="calendar" style="position: relative;">
-                                                <!-- <input type="text" class="date-btn results__drop-btn dropdown-toggle" placeholder="по дате обращения"> -->
-                                                <input type="text" class="results__drop-btn" id="calendar-ru" placeholder="по дате обращения">
+                                            <div class="calendar">
+                                                <input type="text" class="date-inp" id="calendar-ru" placeholder="по дате обращения">
+                                                <img src="images/icons/calendar-arrow.svg" alt="">
                                             </div>
                                         </div>
 
@@ -482,15 +482,6 @@
 	<script src="js/flatpicker.js"></script>
 	<script src="js/flatpicker-ru.js"></script>
 	<script src="js/script.js"></script>
-
-    <script>
-        $(function () {
-            flatpickr('.date-btn', {
-                "locale": "ru",
-                "dateFormat": "Y/m/d",
-            });
-        });
-    </script>
 </body>
 
 </html>
