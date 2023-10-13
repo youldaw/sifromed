@@ -275,7 +275,7 @@
                                         </div>
 
                                         <div class="results__form-btns">
-                                            <a href="#!" class="sec-btn-white results__form-btn">Изменить данные</a>
+                                            <a href="#!" class="sec-btn-white results__form-btn" data-bs-toggle="modal" data-bs-target="#change-data">Изменить данные</a>
                                             <a href="#!" class="sec-btn-tr results__form-btn">Выйти из аккаунта</a>
                                         </div>
                                     </div>
@@ -288,6 +288,65 @@
         </main>
     </div>
 
+
+
+    <!-- Modal Изменить данные -->
+    <div class="modal fade modal__form" id="change-data" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal__authorization-title">Изменить данные</h5>
+                    <button type="button" class="modal__menu-close" data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M7.0001 8.0501L1.7501 13.3001C1.6001 13.4501 1.4251 13.5251 1.2251 13.5251C1.0251 13.5251 0.850098 13.4501 0.700098 13.3001C0.550098 13.1501 0.475098 12.9751 0.475098 12.7751C0.475098 12.5751 0.550098 12.4001 0.700098 12.2501L5.9501 7.0001L0.700098 1.7501C0.550098 1.6001 0.475098 1.4251 0.475098 1.2251C0.475098 1.0251 0.550098 0.850098 0.700098 0.700098C0.850098 0.550098 1.0251 0.475098 1.2251 0.475098C1.4251 0.475098 1.6001 0.550098 1.7501 0.700098L7.0001 5.9501L12.2501 0.700098C12.4001 0.550098 12.5751 0.475098 12.7751 0.475098C12.9751 0.475098 13.1501 0.550098 13.3001 0.700098C13.4501 0.850098 13.5251 1.0251 13.5251 1.2251C13.5251 1.4251 13.4501 1.6001 13.3001 1.7501L8.0501 7.0001L13.3001 12.2501C13.4501 12.4001 13.5251 12.5751 13.5251 12.7751C13.5251 12.9751 13.4501 13.1501 13.3001 13.3001C13.1501 13.4501 12.9751 13.5251 12.7751 13.5251C12.5751 13.5251 12.4001 13.4501 12.2501 13.3001L7.0001 8.0501Z" fill="#3A2B6A" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="change-modal">
+
+                        <div class="change-form">
+                            <form action="#!">
+                                <div class="modal__form-wrap">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович" required>
+                                    </div>
+                                    <div class="modal__form-check">
+                                        <input type="checkbox" id="formCheck1">
+                                        <label for="formCheck1">Нет отчества</label>
+                                    </div>
+    
+                                    <div class="select-drop white mt-0">
+                                        <select class="custom-select sources" name="sex" id="sex" placeholder="Пол">
+                                            <option value="female">Жен.</option>
+                                            <option value="male">Муж.</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="modal__form-btn">Изменить данные</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- modal Authorization -->
     <div class="modal__form">
@@ -327,6 +386,7 @@
         </div>
     </div>
 
+    
     <!-- modal registration -->
 	<div class="modal__form modal__registration">
 		<div class="modal fade" id="formRegistrationModal" aria-hidden="true" aria-labelledby="formRegistrationModalLabel" tabindex="-1">
@@ -348,13 +408,13 @@
 						<form action="#!">
 							<div class="modal__form-wrap">
 								<div class="form-group">
-									<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
+									<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов">
 								</div>
 								<div class="form-group">
-									<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
+									<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван">
 								</div>
 								<div class="form-group">
-									<input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович" required>
+									<input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович">
 								</div>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
@@ -369,13 +429,13 @@
 								</div>
 
 								<div class="form-group">
-									<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+									<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88">
 								</div>
 								<div class="form-group">
-									<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+									<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000">
 								</div>
 								<div class="form-group">
-									<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
+									<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail">
 								</div>
 
 								<div class="modal__form-check">
@@ -393,8 +453,10 @@
 									</label>
 								</div>
 							</div>
-							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
-								data-bs-target="#modalMini1">Далее</button>
+
+							<div class="form-submit-btn" data-bs-toggle="modal" data-bs-target="#modalMini1">
+								<button type="button" class="modal__form-btn">Далее</button>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -402,22 +464,44 @@
 		</div>
 	</div>
 
-    <!-- MODAL MINI 1 -->
-    <div class="modal__mini modal__mini1">
-        <div class="modal fade" id="modalMini1" aria-hidden="true" aria-labelledby="modalMiniLabel" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal__mini-content">
-                            <h4 class="modal__mini-title">Регистрация прошла успешно!</h4>
-                            <img src="./images/modal-mini-img1.png" alt="">
-                            <button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- MODAL Регистрация прошла успешно! -->
+	<div class="modal__mini modal__mini1">
+		<div class="modal fade success-modal" id="modalMini1" aria-hidden="true" aria-labelledby="modalMiniLabel"
+			tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal__mini-content">
+							<h4 class="modal__mini-title">Регистрация прошла успешно!</h4>
+							<img src="./images/modal-mini-img1.svg" alt="">
+							<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL Оплата прошла успешно! -->
+	<div class="modal__mini modal__mini2">
+		<div class="modal fade" id="modalMini2" aria-hidden="true" aria-labelledby="modalMiniLabel"
+			tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal__mini-content">
+							<h4 class="modal__mini-title">Оплата прошла успешно!</h4>
+							<img src="./images/modal-mini-img2.svg" alt="">
+							<div class="modal__mini-links">
+								<a href="#!" class="modal__mini-link">Перейти в личный кабинет</a>
+								<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- Modal result -->
     <div class="modal__result">

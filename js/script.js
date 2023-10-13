@@ -201,9 +201,12 @@ $(function () {
     },
   });
 
-  $('.date-btn').datepicker({
-    language: "ru",
-    orientation: 'auto',
+
+  // calendar
+  flatpickr('#calendar-ru', {
+    disableMobile: "true",
+    "locale": "ru",
+    "dateFormat": "Y/m/d",
   });
 
 
@@ -235,7 +238,7 @@ $(function () {
     },
   });
 
-  
+
 
 
   // custom select

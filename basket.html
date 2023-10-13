@@ -252,13 +252,13 @@
 						<form action="#!">
 							<div class="modal__form-wrap">
 								<div class="form-group">
-									<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов" required>
+									<input type="text" name="lastName" class="modal__form-inp" placeholder="Иванов">
 								</div>
 								<div class="form-group">
-									<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван" required>
+									<input type="text" name="firstName" class="modal__form-inp" placeholder="Иван">
 								</div>
 								<div class="form-group">
-									<input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович" required>
+									<input type="text" name="middleName" class="modal__form-inp" placeholder="Иванович">
 								</div>
 								<div class="modal__form-check">
 									<input type="checkbox" id="formCheck1">
@@ -273,13 +273,13 @@
 								</div>
 
 								<div class="form-group">
-									<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88" required>
+									<input type="number" name="tel" class="modal__form-inp" placeholder="+7 (909) 888 88-88">
 								</div>
 								<div class="form-group">
-									<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000" required>
+									<input type="number" name="date" class="modal__form-inp" placeholder="01.01.2000">
 								</div>
 								<div class="form-group">
-									<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail" required>
+									<input type="email" name="email" class="modal__form-inp" placeholder="Введите E-mail">
 								</div>
 
 								<div class="modal__form-check">
@@ -297,8 +297,10 @@
 									</label>
 								</div>
 							</div>
-							<button type="submit" class="modal__form-btn" data-bs-toggle="modal"
-								data-bs-target="#modalMini1">Далее</button>
+
+							<div class="form-submit-btn" data-bs-toggle="modal" data-bs-target="#modalMini1">
+								<button type="button" class="modal__form-btn">Далее</button>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -308,14 +310,14 @@
 
 	<!-- MODAL MINI 1 -->
 	<div class="modal__mini modal__mini1">
-		<div class="modal fade" id="modalMini1" aria-hidden="true" aria-labelledby="modalMiniLabel"
+		<div class="modal fade success-modal" id="modalMini1" aria-hidden="true" aria-labelledby="modalMiniLabel"
 			tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="modal__mini-content">
 							<h4 class="modal__mini-title">Регистрация прошла успешно!</h4>
-							<img src="./images/modal-mini-img1.png" alt="">
+							<img src="./images/modal-mini-img1.svg" alt="">
 							<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
 						</div>
 					</div>
@@ -323,7 +325,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<!-- MODAL MINI 2 -->
 	<div class="modal__mini modal__mini2">
@@ -334,7 +335,7 @@
 					<div class="modal-body">
 						<div class="modal__mini-content">
 							<h4 class="modal__mini-title">Оплата прошла успешно!</h4>
-							<img src="./images/modal-mini-img2.png" alt="">
+							<img src="./images/modal-mini-img2.svg" alt="">
 							<div class="modal__mini-links">
 								<a href="#!" class="modal__mini-link">Перейти в личный кабинет</a>
 								<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
