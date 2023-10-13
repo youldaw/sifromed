@@ -155,11 +155,6 @@ $(function () {
     $(this).parent().parent().addClass('d-none');
   });
 
-  // basket address
-  $('.choose-address').on('click', function () {
-    $('.basket__address').addClass('active');
-    $(this).addClass('d-none');
-  });
 
 
   // Header scroll 

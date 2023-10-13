@@ -542,7 +542,7 @@ header .logo{
 } 
 .info__card .info__card-img img{
 	width: 100%;
-	border-radius: 64px 64px 0px 0px;
+	border-radius: 28px 28px 0px 0px;
 }
 .info__card .info__card-content{
 	display: flex;
@@ -773,6 +773,9 @@ header .logo{
 	right: 10px;
 	top: 10px;
 	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .catolog__analiz-item-info .catolog__analiz-text{
 	color: #FFF;
@@ -940,6 +943,10 @@ header .logo{
 	font-size: 10px;
 	line-height: 107%;
 	padding: 10px 25px;
+	font-weight: 400;
+}
+.catolog__tab-content .catolog__tab-btn.addToCart {
+	font-weight: 600;
 }
 .catolog__tab-content .catolog__tab-btn:hover{
 	color: #FFF;
@@ -971,6 +978,8 @@ header .logo{
 	color: #FFF;
 	font-size: 12px;
 	font-weight: 300;
+	line-height: normal;
+	text-align: justify;
 }
 .catolog__description-tabs .catolog__tab-bottom-text{
 	margin-top: 20px;
@@ -1011,10 +1020,10 @@ header .logo{
 	width: 80%;
 	height: 2px;
 	background: #fff;
-	margin: 10px auto 32px;
+	margin: 30px auto 30px;
 }
 .basket__box .basket__box-price .basket__price-total p,
-.basket__box .basket__box-price .basket__price-total p b{
+.basket__box .basket__box-price .basket__price-total p b {
 	color: #FFF;
 	font-size: 16px;
 	font-weight: 700;
@@ -1029,31 +1038,104 @@ header .logo{
 .basket__box .basket__box-btns{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 10px;
-	margin-top: 74px;
+	margin-top: 20px;
+}
+.basket__box-choose {
+	margin-top: 15px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+.basket__box-choose .choose-address {
+	border-radius: 10px;
+	border: 1px solid #FFF;
+	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
+	max-width: 160px;
+	width: 100%;
+	height: 34px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	color: #FFF;
+	font-size: 12.255px;
+	font-weight: 300;
+	line-height: normal;
 }
 .basket__box .basket__box-btns .basket__box-btn{
 	padding: 8px 10px;
 }
+.basket__box .basket__box-btns .pay-office {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 75px;
+	border: 1px solid #FFF;
+	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
+	max-width: 142px;
+	width: 100%;
+	height: 34px;
+}
+.basket__box-choose .choose-address:hover,
+.basket__box .basket__box-btns .pay-office:hover {
+	color: #3A2B6A;
+	background: #fff;
+}
+.white-btn,
+.basket-more .more-link,
+.basket__box .basket__box-btns .pay-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #3A2B6A;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 74.89px;
+	border: 3.744px solid rgba(255, 255, 255, 0.00);
+	background: #F5F5F5;
+	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
+	max-width: 142px;
+	width: 100%;
+	height: 34px;
+}
+.white-btn:hover,
+.basket-more .more-link:hover,
+.basket__box .basket__box-btns .pay-btn:hover {
+	color: #F5F5F5;
+	background: #584499;
+}
 
 .basket__content .catolog__analiz-items{
-	margin-top: 31px;
-	margin-bottom: 60px;
+	margin: 30px 0;
 }
 
 /* ----------- */
 .basket__box .basket__address{
-	display: none;
-	padding: 15px 10px;
-	justify-content: space-between;
+	display: flex;
 	align-items: center;
-	gap: 35px;	
-	margin-top: 24px;
+	position: relative;
+	padding: 15px 10px;
+	align-items: center;
+	gap: 20px;	
+	margin-top: 16px;
 	border-radius: 10px;
 	border: 0.5px solid #FFF;
 }
-.basket__box .basket__address.active {
+.basket__box .basket__address .delete-btn {
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 5px;
+	top: 5px;
 }
 .basket__box .basket__address p{
 	color: #F5F5F5;
@@ -1064,6 +1146,16 @@ header .logo{
 	color: #F5F5F5;
 	font-size: 12px;
 	font-weight: 300;
+	max-width: 193px;
+}
+.basket-more {
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.return-btn {
+	margin-top: 30px;
 }
 /* Basket end */
 
