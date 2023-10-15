@@ -179,20 +179,33 @@ $(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    speed: 1000,
-    autoplay: {
-      delay: 1000,
-    },
+    // speed: 1000,
+    // autoplay: {
+    //   delay: 1000,
+    // },
   });
 
 
   // Swiper2
   var swiper2 = new Swiper(".main__info-slide .mySwiper", {
-    slidesPerView: 3.4,
-    spaceBetween: 17,
+    slidesPerView: 6,
+    spaceBetween: 32,
     speed: 1000,
-    autoplay: {
-      delay: 2000,
+    // autoplay: {
+    //   delay: 2000,
+    // },
+    breakpoints: {
+      300: {
+        slidesPerView: 3.4,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+
+      },
     },
   });
 
@@ -201,7 +214,7 @@ $(function () {
   flatpickr('#calendar-ru', {
     disableMobile: "true",
     "locale": "ru",
-    "dateFormat": "Y/m/d",
+    "dateFormat": "Y-m-d",
   });
 
 
@@ -214,9 +227,9 @@ $(function () {
       clickable: true,
     },
     speed: 1000,
-    autoplay: {
-      delay: 2000,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    // },
     breakpoints: {
       300: {
         slidesPerView: 1.2,
