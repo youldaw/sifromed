@@ -735,17 +735,18 @@ header .header-links a:hover {
 /* Nurse info end */
 
 /* Info cards start */
-.info-cards{
-	padding: 120px 0;
-}
+
 .info-cards .info__cards-wrap{
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
-	margin-top: 40px;
+	padding: 100px 0;
+}
+.info-rov .info__card {
+	margin-bottom: 30px;
 }
 .info__card{
-	display: none;
+	display: flex;
 	flex-direction: column;
 } 
 .info__card .info__card-img img{
@@ -759,7 +760,7 @@ header .header-links a:hover {
 	align-items: center;
 	justify-content: space-between;
 	background-color: #584499;
-	padding: 20px 18px;
+	padding: 20px 40px 40px 60px;
 	border-radius: 0 0 28px 28px;
 }
 .info__card .info__card-title{
@@ -849,7 +850,7 @@ header .header-links a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .cat-analize-info p {
 	color: #FFF;
@@ -859,7 +860,7 @@ header .header-links a:hover {
 .cat-analize-info span {
 	display: block;
 	color: #FFF;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 5px;
 }
@@ -940,6 +941,9 @@ header .header-links a:hover {
 	gap: 15px;
 	margin-top: 35px;
 }
+.accordion-rov {
+	justify-content: center;
+}
 .catolog-sec .catolog__link-item .accordion-item{
 	border-radius: 15px;
 	padding: 0;
@@ -961,11 +965,12 @@ header .header-links a:hover {
 	font-weight: 600;
 }
 .catolog-sec .catolog__link-item .accordion-button span{
-	max-width: 179px;
+	max-width: 90%;
+	font-size: 24px;
 }
 .catolog-sec .catolog__link-item .accordion-body p{
 	color: #FFF;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -977,7 +982,7 @@ header .header-links a:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	margin-bottom: 50px;
+	margin: 100px 0 50px;
 }
 .catolog__analiz-item{
 	display: flex;
@@ -1899,25 +1904,47 @@ header .header-links a:hover {
 }
 
 .articles-open-date {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
 	display: inline-block;
 }
-
+.ao-rov {
+	gap: 20px 0;
+}
 .articles-open-title {
 	color: #fff;
-	font-size: 16px;
+	font-size: 36px;
 	font-weight: 600;
 	line-height: normal;
-	margin-top: 5px;
+	margin-top: 12px;
+	margin-bottom: 44px;
 }
-
+.articles-rov {
+	align-items: flex-end;
+}
+.articles-doctor {
+	text-align: right;
+}
+.articles-doctor img {
+	height: 700px;
+	margin-top: 100px;
+}
 .articles-open-subtitle {
 	text-align: justify;
-	font-size: 12px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 20px;
+}
+.articles-open-subtitle:first-child {
+	margin-top: 0;
+}
+.articles-share-subtitle {
+	color: #FFF;
+	font-size: 25px;
+	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
-	margin-top: 20px;
 }
 
 .articles-open-subtitle .space {
@@ -1937,8 +1964,15 @@ header .header-links a:hover {
 .articles-open-socials {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 30px;
 	padding: 15px 0;
+}
+.articles-open-socials a:hover {
+	transform: scale(1.2);
+}
+.articles-open-socials a svg {
+	height: 41px;
+	width: 41px;
 }
 
 .info__cards-wrap .info__card.articles-card {
@@ -1972,21 +2006,27 @@ header .header-links a:hover {
 .comment-cards {
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 30px;
 	margin-top: 60px;
 	margin-bottom: 116px;
 }
-
+.comment-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .comment-card{
-	border-bottom: 1px solid #fff;
+	border-radius: 30px;
+	border: 1px solid #B3A0EF;
+	padding: 40px;
 }
 
 .comment-card-title {
 	color: #FFF;
-	font-size: 16px;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: normal;
-	margin-bottom: 12px;
+	margin-bottom: 30px;
 }
 
 .comment-card-rate {
@@ -1998,19 +2038,28 @@ header .header-links a:hover {
 
 .comment-card-subtitle {
 	color: #FFF;
-	font-size: 12px;
-	margin: 13px 0px 20px;
+	font-size: 20px;
+	line-height: normal;
+}
+.comment-img {
+	text-align: right;
+	margin-top: 50px;
+}
+.img-col {
+	margin-left: auto;
+}
+.comment-img img {
+	width: 100%;
 }
 /* comment-slide */
 .comment-slide-content {
 	position: relative;
 	padding-top: 30px;
+	overflow: hidden;
 }
-.comment-slide .swiper-wrapper {
-	padding: 0 30px;
-}
+
 .comment-slide {
-	height: 472px;
+	height: 510px;
 }
 .comment-slide .comment-slide-img {
 	margin-bottom: 15px;
@@ -2047,7 +2096,7 @@ header .header-links a:hover {
 .comment-slide .comment-slide-name span,
 .comment-slide .comment-slide-name p {
 	color: #FFF;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 600;
 	line-height: normal;
 }
@@ -2062,12 +2111,14 @@ header .header-links a:hover {
 .comment-slide .swiper-slide {
 	margin-top: 30px;
 	transition: .4s all ease;
+	opacity: 0.5;
 }
 .comment-slide .swiper-slide * {
 	transition: .3s all ease;
 }
 .comment-slide .swiper-slide-active {
 	margin-top: 0;
+	opacity: 1;
 }
 .comment-slide .swiper-slide-active .comment-slide-img {
 	transition: .3s all ease;
@@ -2677,12 +2728,7 @@ header .header-links a:hover {
 .catalog-plus .plus-btn:hover svg path {
 	stroke: #3A2B6A;
 }
-.cat-analize-sec {
-	background-image: url(../images/bg-image.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
-}
+
 .cat-tab-in {
 	margin-bottom: 20px;
 }
@@ -2859,10 +2905,10 @@ header .header-links a:hover {
 	display: block;
 	border-radius: 60px;
 	border: 1px solid #FFF;
-	padding: 6px 50px 6px 30px;
+	padding: 10px 50px 10px 30px;
 	background: rgba(255, 253, 253, 0.00);
 	color: #FFF;
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: normal;
 	cursor: pointer;
@@ -3507,6 +3553,7 @@ header .header-links a:hover {
     .info-cards .info__cards-wrap{
         gap: 30px;
         margin-top: 40px;
+		padding: 0;
     }
     .info__card{
         display: none;
@@ -3514,14 +3561,11 @@ header .header-links a:hover {
     } 
     .info__card .info__card-img img{
         width: 100%;
-        border-radius: 28px 28px 0px 0px;
-        height: auto;
+        border-radius: 48px 48px 0px 0px;
+        height: 200px;
+		object-fit: cover;
     }
     .info__card .info__card-content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #584499;
         padding: 20px 18px;
         border-radius: 0 0 28px 28px;
     }
@@ -3554,6 +3598,11 @@ header .header-links a:hover {
         padding: 8.5px 10px;
         font-size: 16px;
     }
+	.info__cards-wrap .mob-btns {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
     /* Info cards end */
     
     
@@ -3716,11 +3765,8 @@ header .header-links a:hover {
         display: none;
     }
     .catolog__analiz-items{
-        display: flex;
-        flex-direction: column;
         gap: 16px;
-        margin-top: 63px;
-        margin-bottom: 50px;
+        margin: 60px 0;
     }
     .catolog__analiz-item{
         display: flex;
@@ -4621,8 +4667,11 @@ header .header-links a:hover {
         font-weight: 600;
         line-height: normal;
         margin-top: 5px;
+		margin-bottom: 20px;
     }
-    
+	.articles-share-subtitle {
+		font-size: 12px;
+	}
     .articles-open-subtitle {
         text-align: justify;
         font-size: 12px;
@@ -4646,11 +4695,12 @@ header .header-links a:hover {
     }
     
     .articles-open-socials {
-        display: flex;
-        align-items: center;
         gap: 12px;
-        padding: 15px 0;
     }
+	.articles-open-socials a svg {
+		height: 30px;
+		width: 30px;
+	}
     
     .info__cards-wrap .info__card.articles-card {
         border: 1.5px solid #DAB5EB;
@@ -4681,15 +4731,21 @@ header .header-links a:hover {
     }
     
     .comment-cards {
-        display: flex;
-        flex-direction: column;
         gap: 25px;
         margin-top: 60px;
         margin-bottom: 116px;
     }
+
+	.comment-top {
+		flex-direction: column;
+		align-items: flex-start;
+	}
     
     .comment-card{
+		border: none;
         border-bottom: 1px solid #fff;
+		border-radius: 0;
+		padding: 0 0 20px;
     }
     
     .comment-card-title {
@@ -4710,12 +4766,11 @@ header .header-links a:hover {
     .comment-card-subtitle {
         color: #FFF;
         font-size: 12px;
-        margin: 13px 0px 20px;
+        margin: 13px 0px 0;
     }
     /* comment-slide */
     .comment-slide-content {
-        position: relative;
-        padding-top: 30px;
+        overflow: visible;
     }
     .comment-slide .swiper-wrapper {
         padding: 0 30px;

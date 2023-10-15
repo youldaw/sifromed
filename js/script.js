@@ -95,22 +95,40 @@ $(function () {
 
 
   // show-more content
-  $(".info__card").slice(0, 2).show();
-  $("#load-More").on('click', function (e) {
-    e.preventDefault();
-    $(".info__card:hidden").slice(0, 2).slideDown();
-    if ($(".info__card:hidden").length == 0) {
-      $("#load-Less").fadeIn('slow');
-      $("#load-More").hide();
-      // $("#loadMore").text('Load only the first 4');
-    }
-  });
-  $("#load-Less").on('click', function (e) {
-    e.preventDefault();
-    $('.info__card:not(:lt(2))').fadeOut();
-    $("#load-More").fadeIn('slow');
-    $("#load-Less").hide();
-  });
+  (function ($) {
+
+    function mediaSize() {
+      /* Set the matchMedia */
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        $(".info__card").slice(0, 2).show();
+        $("#load-More").on('click', function (e) {
+          e.preventDefault();
+          $(".info__card:hidden").slice(0, 2).slideDown();
+          if ($(".info__card:hidden").length == 0) {
+            $("#load-Less").fadeIn('slow');
+            $("#load-More").hide();
+            // $("#loadMore").text('Load only the first 4');
+          }
+        });
+        $("#load-Less").on('click', function (e) {
+          e.preventDefault();
+          $('.info__card:not(:lt(2))').fadeOut();
+          $("#load-More").fadeIn('slow');
+          $("#load-Less").hide();
+        });
+
+      } else {
+        return;
+      }
+    };
+
+    /* Call the function */
+    mediaSize();
+    /* Attach the function to the resize event listener */
+    window.addEventListener('resize', mediaSize, false);
+
+  })(jQuery);
+  
 
 
   // comment show-more content
@@ -221,7 +239,7 @@ $(function () {
   // comment slide
   var swiper1 = new Swiper(".comment-slide", {
     lidesPerView: 1,
-    loop: true,
+    loop: false,
     spaceBetween: 20,
     pagination: {
       clickable: true,
@@ -234,13 +252,13 @@ $(function () {
       300: {
         slidesPerView: 1.2,
         spaceBetween: 20,
-        // centered: true,
+        loop: true,
       },
       768: {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 3.4,
 
       },
     },
