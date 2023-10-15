@@ -1401,7 +1401,9 @@ header .header-links a:hover {
 	display: flex;
 	justify-content: center;
 }
-
+.basket-img img {
+	width: 100%;
+}
 .return-btn {
 	margin-top: 30px;
 }
