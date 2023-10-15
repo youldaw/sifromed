@@ -976,7 +976,7 @@ header .header-links a:hover {
 .catolog__analiz-items{
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 30px;
 	margin-bottom: 50px;
 }
 .catolog__analiz-item{
@@ -989,7 +989,7 @@ header .header-links a:hover {
 	align-items: flex-start;
 	justify-content: space-between;
 	gap: 8px;
-	border-radius: 15px;
+	border-radius: 30px;
 	border: 1px solid #FFF;
 	background: rgba(217, 217, 217, 0.00);
 	padding: 45px 100px 45px 30px;
@@ -999,12 +999,16 @@ header .header-links a:hover {
 .catolog__analiz-item-info .delete-btn {
 	cursor: pointer;
 	position: absolute;
-	right: 10px;
-	top: 10px;
+	top: 35px;
+	right: 45px;
 	z-index: 2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.catolog__analiz-item-info .delete-btn svg {
+	height: 14px;
+	width: 14px;
 }
 .catolog__analiz-item-info .cat-name span {
 	color: #FFF;
@@ -1024,6 +1028,7 @@ header .header-links a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 0 80px;
 }
 .catolog__analiz-price span {
 	color: #FFF;
@@ -1230,28 +1235,31 @@ header .header-links a:hover {
 
 /* Basket start */
 .basket .basket__box{
-	border-radius: 15px;
+	border-radius: 70px;
 	border: 2px solid #FFF;
 	background: rgba(255, 255, 255, 0.00);
-	padding: 30px;
+	padding: 50px 60px;
 }
 .basket__box .basket__box-title{
 	color: #FFF;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .basket__box .basket__box-price p{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 7px;
+	margin-bottom: 15px;
 	color: #FFF;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 300;
 }
 .basket__box .basket__box-price p b{
 	font-weight: 500;
+}
+.basket__box .basket__box-price p.blood {
+	font-size: 18px;
 }
 .basket__box .basket__box-price .basket__line{
 	width: 80%;
@@ -1259,12 +1267,14 @@ header .header-links a:hover {
 	background: #fff;
 	margin: 30px auto 30px;
 }
-.basket__box .basket__box-price .basket__price-total p,
-.basket__box .basket__box-price .basket__price-total p b {
-	color: #FFF;
-	font-size: 16px;
-	font-weight: 700;
+.basket__box .basket__box-price .basket__price-total p b,
+.basket__box .basket__box-price .basket__price-total p {
+	font-size: 24px;
+	color: #fff;
+	line-height: normal;
+	font-weight: 500;
 }
+
 .basket__box .basket__box-price .basket__discount{
 	color: #DFD5FF;
 	font-size: 14px;
@@ -1276,29 +1286,30 @@ header .header-links a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 10px;
-	margin-top: 20px;
+	gap: 30px;
+	margin-top: 40px;
+	flex-direction: column;
 }
 .basket__box-choose {
-	margin-top: 15px;
+	margin-top: 45px;
 	display: flex;
 	align-items: flex-start;
-	justify-content: flex-end;
+	justify-content: center;
 }
 .basket__box-choose .choose-address {
-	border-radius: 10px;
+	border-radius: 14px;
 	border: 1px solid #FFF;
-	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
-	max-width: 160px;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+	max-width: 270px;
 	width: 100%;
-	height: 34px;
+	height: 59px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 	color: #FFF;
-	font-size: 12.255px;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 600;
 	line-height: normal;
 }
 .basket__box .basket__box-btns .basket__box-btn{
@@ -1310,15 +1321,14 @@ header .header-links a:hover {
 	justify-content: center;
 	color: #FFF;
 	text-align: center;
-	font-size: 10px;
+	font-size: 20px;
 	font-weight: 500;
 	line-height: normal;
 	border-radius: 75px;
 	border: 1px solid #FFF;
 	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
-	max-width: 142px;
 	width: 100%;
-	height: 34px;
+	height: 70px;
 }
 .basket__box-choose .choose-address:hover,
 .basket__box .basket__box-btns .pay-office:hover {
@@ -1332,16 +1342,15 @@ header .header-links a:hover {
 	align-items: center;
 	justify-content: center;
 	color: #3A2B6A;
-	font-size: 10px;
+	font-size: 20px;
 	font-weight: 500;
 	line-height: normal;
 	border-radius: 74.89px;
 	border: 3.744px solid rgba(255, 255, 255, 0.00);
 	background: #F5F5F5;
 	box-shadow: 0px 4.99267px 4.99267px 0px rgba(0, 0, 0, 0.25);
-	max-width: 142px;
 	width: 100%;
-	height: 34px;
+	height: 70px;
 }
 .white-btn:hover,
 .basket-more .more-link:hover,
@@ -1353,7 +1362,9 @@ header .header-links a:hover {
 .basket__content .catolog__analiz-items{
 	margin-bottom: 30px;
 }
-
+.basket {
+	padding-bottom: 80px;
+}
 /* ----------- */
 .basket__box .basket__address{
 	display: flex;
@@ -2465,7 +2476,7 @@ header .header-links a:hover {
 
 /* Footer start */
 .footer{
-	padding: 50px 0 200px;
+	padding: 50px 0;
 	border-top: 1px solid #fff;
 }
 .footer .footer__content{
@@ -2691,12 +2702,23 @@ header .header-links a:hover {
 	margin-top: -2px;
 	padding: 0;
 }
+.map-modal .map-search-content .map-search {
+	padding: 5px 30px;
+	margin: 50px 0;
+}
+.map-modal .map-search-content .map-search input,
+.map-modal .map-search-content .map-search input::placeholder {
+	color: rgba(58, 43, 106, 0.40);
+}
 .map-modal .btn-close {
 	color: #3A2B6A;
 	box-sizing: border-box;
 	margin-left: auto;
 	text-align: right;
 	float: right;
+}
+.map-modal .modal-dialog {
+	max-width: 900px;
 }
 .map-modal .modal-body {
 	padding: 30px 24px;
@@ -2717,13 +2739,13 @@ header .header-links a:hover {
 	border: 5px solid rgba(255, 255, 255, 0.00);
 	background: #584499;
 	box-shadow: 0px 6.5px 6.5px 0px rgba(0, 0, 0, 0.25);
-	width: 185px;
-	height: 44px;
+	width: 285px;
+	height: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	color: #fff;
 }
@@ -3734,6 +3756,8 @@ header .header-links a:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
+		gap: 0;
+		width: 100%;
     }
     .catolog__analiz-price span{
         color: #FFF;
@@ -3741,6 +3765,7 @@ header .header-links a:hover {
         font-weight: 300;
         display: flex;
         align-items: center;
+		flex-direction: row;
         gap: 16px;
     }
     .catolog__analiz-price span b{
@@ -3778,6 +3803,16 @@ header .header-links a:hover {
     .cat-rov {
         gap: 10px 0;
     }
+
+	.col-right {
+		order: 1;
+	}
+	.col-left {
+		order: 2;
+	}
+	.float-rov {
+		margin-top: 0;
+	}
     
     
     
@@ -3983,11 +4018,9 @@ header .header-links a:hover {
         margin-top: 4px;
     }
     .basket__box .basket__box-btns{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         gap: 10px;
         margin-top: 20px;
+		flex-direction: row;
     }
     .basket__box-choose {
         margin-top: 15px;
@@ -4002,11 +4035,6 @@ header .header-links a:hover {
         max-width: 160px;
         width: 100%;
         height: 34px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        color: #FFF;
         font-size: 12.255px;
         font-weight: 300;
         line-height: normal;
@@ -4015,11 +4043,6 @@ header .header-links a:hover {
         padding: 8px 10px;
     }
     .basket__box .basket__box-btns .pay-office {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFF;
-        text-align: center;
         font-size: 10px;
         font-weight: 500;
         line-height: normal;
@@ -4029,11 +4052,6 @@ header .header-links a:hover {
         max-width: 142px;
         width: 100%;
         height: 34px;
-    }
-    .basket__box-choose .choose-address:hover,
-    .basket__box .basket__box-btns .pay-office:hover {
-        color: #3A2B6A;
-        background: #fff;
     }
     .white-btn,
     .basket-more .more-link,
@@ -4052,12 +4070,6 @@ header .header-links a:hover {
         max-width: 142px;
         width: 100%;
         height: 34px;
-    }
-    .white-btn:hover,
-    .basket-more .more-link:hover,
-    .basket__box .basket__box-btns .pay-btn:hover {
-        color: #F5F5F5;
-        background: #584499;
     }
     
     .basket__content .catolog__analiz-items{
