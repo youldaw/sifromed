@@ -1366,6 +1366,7 @@ header .header-links a:hover {
 
 .basket__content .catolog__analiz-items{
 	margin-bottom: 30px;
+	margin-top: 0;
 }
 .basket {
 	padding-bottom: 80px;
