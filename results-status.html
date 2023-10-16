@@ -16,6 +16,16 @@
 
 <body>
     <div class="wrapper">
+        <div class="fixed-social">
+			<div class="container">
+				<div class="fixed-links">
+					<a href="#!"><img src="images/instagram-icon.svg" alt=""></a>
+					<a href="#!"><img src="images/vk-icon.svg" alt=""></a>
+					<a href="#!"><img src="images/telegram-icon.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+        
         <header class="header">
 			<div class="container">
 				<div class="header__nav">
@@ -131,180 +141,238 @@
                             <input type="search" placeholder="Исследование" class="main-search-inp">
                         </div>
 
-                        <div class="results__tabs">
-                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Результаты</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Персональные данные</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab">
-                                    <div class="results__tab-content">
-                                        <div class="results__tab-drop">
-
-                                            <div class="dropdown add-drop">
-                                                <button class="results__drop-btn dropdown-toggle" data-bs-toggle="modal" data-bs-target="#modalResult">
-                                                    по статусу
-                                                    <img src="./images/icons/down.svg" alt="" class="results__drop-icon">
-                                                </button>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="results__tabs">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                                aria-selected="true">Результаты</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Персональные данные</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="results__tab-content">
+                                                <div class="results__tab-drop">
+        
+                                                    <div class="dropdown add-drop">
+                                                        <button class="results__drop-btn dropdown-toggle" data-bs-toggle="modal" data-bs-target="#modalResult">
+                                                            по статусу
+                                                            <img src="./images/icons/down.svg" alt="" class="results__drop-icon">
+                                                        </button>
+                                                    </div>
+        
+                                                    <div class="calendar">
+                                                        <input type="text" class="date-inp" id="calendar-ru" placeholder="по дате обращения">
+                                                        <img src="images/icons/calendar-arrow.svg" alt="">
+                                                    </div>
+        
+                                                </div>
+        
+                                                <div class="results__tab-items">
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon1.svg" alt="">
+                                                            Оплачено
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon2.svg" alt="">
+                                                            Заказ создан
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item results__ready-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon3.svg" alt="">
+                                                            Результат готов
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon4.svg" alt="">
+                                                            В процессе оплаты
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item results__cancel-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon5.svg" alt="">
+                                                            Заказ отменен
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon6.svg" alt="">
+                                                            В процессе готовности
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon7.svg" alt="">
+                                                            Анализы готовы частично
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon8.svg" alt="">
+                                                            Анализы готовы полностью
+                                                        </a>
+                                                    </div>
+                                                    <div class="results__tab-item results__error-item">
+                                                        <div class="results__item-id">
+                                                            <div class="pc id-text">Исследование</div>
+                                                            <div class="result-id">
+                                                                <p>Заказ №</p>
+                                                                <span>1212344</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="results__item-date">
+                                                            <p class="pc">Дата обращения</p>
+                                                            <span>08.09.2023 12:44</span>
+                                                        </div>
+                                                        <a href="#!" class="results__item-link">
+                                                            <img src="./images/icons/results__item-icon9.svg" alt="">
+                                                            Ошибка при сдаче анализа
+                                                        </a>
+                                                    </div>
+                                                </div>
+        
                                             </div>
-
-                                            <div class="calendar">
-                                                <input type="text" class="date-inp" id="calendar-ru" placeholder="по дате обращения">
-                                                <img src="images/icons/calendar-arrow.svg" alt="">
-                                            </div>
-
                                         </div>
-
-                                        <div class="results__tab-items">
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">
+                                            <div class="results__tab2-form">
+                                                <div class="results__form-item">
+                                                    <h4 class="result__form-title">Основная информация</h4>
+                                                    <div class="results__form-inp">
+                                                        <span>ФИО:</span>
+                                                        <input type="text" name="name"
+                                                            placeholder="Кудряшов Дмитрий Михайлович">
+                                                    </div>
+                                                    <div class="results__form-inp">
+                                                        <span>Дата рождения:</span>
+                                                        <input type="number" name="name" placeholder="20.10.2000">
+                                                    </div>
+                                                    <div class="results__form-inp">
+                                                        <span>Пол:</span>
+                                                        <a href="#!">Мужской</a>
+                                                    </div>
                                                 </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon1.svg" alt="">
-                                                    Оплачено
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
+        
+                                                <div class="results__form-item">
+                                                    <h4 class="result__form-title">Контактная информация</h4>
+                                                    <div class="results__form-inp">
+                                                        <span>E-mail:</span>
+                                                        <input type="email" name="name" placeholder="dkudryshov@yandex.ru">
+                                                        <img src="images/icons/success.svg" alt="" class="result__form-icon">
+                                                    </div>
+                                                    <div class="results__form-inp">
+                                                        <span>Телефон:</span>
+                                                        <input type="number" name="name" placeholder="+7 (999) 999-99-99">
+                                                        <img src="images/icons/success.svg" alt="" class="result__form-icon">
+                                                    </div>
                                                 </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon2.svg" alt="">
-                                                    Заказ создан
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item results__ready-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
+        
+                                                <div class="results__form-btns">
+                                                    <a href="#!" class="sec-btn-white results__form-btn" data-bs-toggle="modal" data-bs-target="#change-data">Изменить данные</a>
+                                                    <a href="#!" class="sec-btn-tr results__form-btn">Выйти из аккаунта</a>
                                                 </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon3.svg" alt="">
-                                                    Результат готов
-                                                </a>
                                             </div>
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon4.svg" alt="">
-                                                    В процессе оплаты
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item results__cancel-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon5.svg" alt="">
-                                                    Заказ отменен
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon6.svg" alt="">
-                                                    В процессе готовности
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon7.svg" alt="">
-                                                    Анализы готовы частично
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon8.svg" alt="">
-                                                    Анализы готовы полностью
-                                                </a>
-                                            </div>
-                                            <div class="results__tab-item results__error-item">
-                                                <div class="results__item-id">
-                                                    <p>Заказ №</p>
-                                                    <span>1212344</span>
-                                                </div>
-                                                <span class="results__item-date">08.09.2023 12:44</span>
-                                                <a href="#!" class="results__item-link">
-                                                    <img src="./images/icons/results__item-icon9.svg" alt="">
-                                                    Ошибка при сдаче анализа
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab">
-                                    <div class="results__tab2-form">
-                                        <div class="results__form-item">
-                                            <h4 class="result__form-title">Основная информация</h4>
-                                            <div class="results__form-inp">
-                                                <span>ФИО:</span>
-                                                <input type="text" name="name"
-                                                    placeholder="Кудряшов Дмитрий Михайлович">
-                                            </div>
-                                            <div class="results__form-inp">
-                                                <span>Дата рождения:</span>
-                                                <input type="number" name="name" placeholder="20.10.2000">
-                                            </div>
-                                            <div class="results__form-inp">
-                                                <span>Пол:</span>
-                                                <a href="#!">Мужской</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="results__form-item">
-                                            <h4 class="result__form-title">Контактная информация</h4>
-                                            <div class="results__form-inp">
-                                                <span>E-mail:</span>
-                                                <input type="email" name="name" placeholder="dkudryshov@yandex.ru">
-                                                <img src="images/icons/success.svg" alt="" class="result__form-icon">
-                                            </div>
-                                            <div class="results__form-inp">
-                                                <span>Телефон:</span>
-                                                <input type="number" name="name" placeholder="+7 (999) 999-99-99">
-                                                <img src="images/icons/success.svg" alt="" class="result__form-icon">
-                                            </div>
-                                        </div>
-
-                                        <div class="results__form-btns">
-                                            <a href="#!" class="sec-btn-white results__form-btn" data-bs-toggle="modal" data-bs-target="#change-data">Изменить данные</a>
-                                            <a href="#!" class="sec-btn-tr results__form-btn">Выйти из аккаунта</a>
                                         </div>
                                     </div>
                                 </div>

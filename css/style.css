@@ -1112,9 +1112,9 @@ header .header-links a:hover {
 .results__tabs .nav-pills .nav-link{
 	background-color: transparent;
 	color: #FFF;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 300;
-	padding-bottom: 4px;
+	padding: 4px 40px 7px;
 	border-bottom: 2px solid transparent;
 	border-radius: 0;
 }
@@ -1417,18 +1417,25 @@ header .header-links a:hover {
 
 /* Results start */
 .results__content .results__tabs{
-	margin-top: 35px;
+	margin-top: 70px;
+}
+.id-text {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+}
+.result-id {
+    display: flex;
+    align-items: center;
 }
 .results__tabs .nav-pills{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	border-bottom: .5px solid #FFF;
-	margin-bottom: 31px;
+	margin-bottom: 90px;
 }
-.results__tabs .nav-pills .nav-item {
-	width: 50%;
-}
+
 .results__tabs .nav-pills .nav-link{
 	width: 100%;
 	padding-bottom: 14px;
@@ -1437,7 +1444,8 @@ header .header-links a:hover {
 .results__tabs .results__tab-drop{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
+    gap: 0 30px;
 }
 .add-drop .dropdown-toggle::after{
 	display: none;
@@ -1458,13 +1466,13 @@ header .header-links a:hover {
 }
 .add-drop .results__drop-btn{
 	display: flex;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
 	color: #FFF;
 	text-align: center;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 300;
 	border-radius: 30px;
 	border: 0.5px solid #FFF;
@@ -1539,28 +1547,37 @@ header .header-links a:hover {
 	flex-direction: column;
 	gap: 9px;
 }
+.results__tab-items .results__tab-item .results__item-id span,
 .results__tab-items .results__tab-item .results__item-id p{
 	color: #FFF;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 22px;
+	font-weight: 500;
 	white-space: nowrap;
 }
-.results__tab-items .results__tab-item .results__item-id span,
 .results__tab-items .results__tab-item .results__item-date{
 	color: #FFF;
-	font-size: 12px;
+	font-size: 22px;
 	font-weight: 300;
 	white-space: nowrap;
 }
+.results__tab-items .results__tab-item .results__item-date p {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
 .results__tab-items .results__tab-item .results__item-link{
 	color: #FFF;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
-	gap: 6px;
+	gap: 10px;
 	text-align: center;
-	max-width: 95px;
+	padding: 15px 30px;
+    border-radius: 35px;
+    border: 2px solid #FFF;
+}
+.results__tab-items .results__tab-item .results__item-link img {
+    min-height: 20px;
 }
 
 .results__tab-items .results__cancel-item .results__item-id p,
@@ -1827,16 +1844,15 @@ header .header-links a:hover {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap: 20px;
+	gap: 50px;
 }
 
 .manual-card {
 	width: 100%;
-	height: 293px;
 	flex-shrink: 0;
 	border-radius: 30px;
 	background: #584499;
-	padding: 20px;
+	padding: 60px;
 	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 	position: relative;
 	overflow: hidden;
@@ -1844,25 +1860,26 @@ header .header-links a:hover {
 
 .manual-card .level {
 	display: inline-block;
-	padding: 10px;
-	border-radius: 15px;
+	padding: 16px;
+	border-radius: 60px;
 	border: 1px solid #977AF5;
 	color: #FFF;
-	font-size: 18px;
+	font-size: 29px;
 	font-weight: 700;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .manual-card-title b,
 .manual-card-title {
 	color: #FFF;
-	font-size: 13px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: normal;
 }
 
 .manual-card-title span {
-	font-weight: 300;
+	font-weight: 400;
+
 }
 
 .manual-card .card1-img1 {
@@ -1871,22 +1888,19 @@ header .header-links a:hover {
 
 .manual-card.one .card1-img1 {
 	position: absolute;
-	width: 168px;
-	height: 249px;
+	height: 300px;
 	bottom: -25px;
-    right: -30px;
+    right: 0px;
 }
 .manual-card.one .card1-img2 {
 	position: absolute;
-	width: 252px;
-	height: 208px;
+	height: 320px;
 	bottom: -40px;
-	right: 14px;
+	right: 70px;
 }
 .manual-card.two .card1-img1 {
 	position: absolute;
-	width: 246px;
-	height: 244px;
+	height: 400px;
 	right: -25px;
 	bottom: -50px;
 }
@@ -2865,19 +2879,19 @@ header .header-links a:hover {
 }
 .calendar {
 	width: 100%;
-	max-width: 168px;
-	padding: 10px 20px;
+	max-width: 220px;
+	padding: 10px 30px;
 	border-radius: 30px;
 	border: 0.5px solid #FFF;
 	display: inline-flex;
 	align-items: center;
-	height: 40px;
+	height: 45px;
 }
 .calendar input,
 .calendar input::placeholder {
 	color: #FFF;
 	font-family: 'Jost';
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 300;
 }
 .calendar input {
@@ -3029,7 +3043,18 @@ header .header-links a:hover {
 	order: 2;
 }
 
-
+.fixed-social .container {
+    position: relative;
+}
+.fixed-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px 0;
+}
 
 
 
@@ -4176,7 +4201,7 @@ header .header-links a:hover {
         align-items: center;
         justify-content: space-between;
         border-bottom: .5px solid #FFF;
-        margin-bottom: 31px;
+        margin-bottom: 30px;
     }
     .results__tabs .nav-pills .nav-item {
         width: 50%;
@@ -4184,15 +4209,6 @@ header .header-links a:hover {
     .results__tabs .nav-pills .nav-link{
         width: 100%;
         padding-bottom: 14px;
-    }
-    
-    .results__tabs .results__tab-drop{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .add-drop .dropdown-toggle::after{
-        display: none;
     }
     .calendar .date-btn {
         color: #FFF;
@@ -4313,8 +4329,16 @@ header .header-links a:hover {
         gap: 6px;
         text-align: center;
         max-width: 95px;
+        padding: 0;
+        border: none;
     }
-    
+    .result-id {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .results__tab-items .results__tab-item .results__item-link img {
+        min-height: 16px;
+    }
     .results__tab-items .results__cancel-item .results__item-id p,
     .results__tab-items .results__cancel-item .results__item-id span,
     .results__tab-items .results__cancel-item .results__item-date,
@@ -4576,9 +4600,6 @@ header .header-links a:hover {
     
     
     .manual-cards {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         gap: 20px;
     }
     
@@ -4595,11 +4616,8 @@ header .header-links a:hover {
     }
     
     .manual-card .level {
-        display: inline-block;
         padding: 10px;
         border-radius: 15px;
-        border: 1px solid #977AF5;
-        color: #FFF;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 10px;
