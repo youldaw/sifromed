@@ -3094,6 +3094,7 @@ header .header-links a:hover {
 	.pc {
 		display: none !important;
 	}
+    .fixed-social,
 	.mob {
 		display: block !important;
 	}
