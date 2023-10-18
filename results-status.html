@@ -157,8 +157,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                            aria-labelledby="pills-home-tab">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                             <div class="results__tab-content">
                                                 <div class="results__tab-drop">
         
@@ -334,43 +333,58 @@
         
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                            aria-labelledby="pills-profile-tab">
-                                            <div class="results__tab2-form">
-                                                <div class="results__form-item">
-                                                    <h4 class="result__form-title">Основная информация</h4>
-                                                    <div class="results__form-inp">
-                                                        <span>ФИО:</span>
-                                                        <input type="text" name="name"
-                                                            placeholder="Кудряшов Дмитрий Михайлович">
-                                                    </div>
-                                                    <div class="results__form-inp">
-                                                        <span>Дата рождения:</span>
-                                                        <input type="number" name="name" placeholder="20.10.2000">
-                                                    </div>
-                                                    <div class="results__form-inp">
-                                                        <span>Пол:</span>
-                                                        <a href="#!">Мужской</a>
+
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            <div class="row data-rov">
+                                                <div class="col-lg-8">
+                                                    <div class="results__tab2-form">
+                                                        <div class="results__form-item">
+                                                            <h4 class="result__form-title">Основная информация</h4>
+                                                            <div class="results__form-inp">
+                                                                <span>ФИО:</span>
+                                                                <div class="form-group w-100">
+                                                                    <input type="text" name="name" placeholder="Кудряшов Дмитрий Михайлович">
+                                                                </div>
+                                                            </div>
+                                                            <div class="results__form-inp">
+                                                                <span>Дата рождения:</span>
+                                                                <div class="form-group w-100">
+                                                                    <input type="number" name="name" placeholder="20.10.2000">
+                                                                </div>
+                                                            </div>
+                                                            <div class="results__form-inp">
+                                                                <span>Пол:</span>
+                                                                <p>Мужской</p>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="results__form-item">
+                                                            <h4 class="result__form-title">Контактная информация</h4>
+                                                            <div class="results__form-inp">
+                                                                <span>E-mail:</span>
+                                                                <input type="email" name="name" placeholder="dkudryshov@yandex.ru">
+                                                                <img src="images/icons/success.svg" alt="" class="result__form-icon">
+                                                            </div>
+                                                            <div class="results__form-inp">
+                                                                <span>Телефон:</span>
+                                                                <input type="number" name="name" placeholder="+7 (999) 999-99-99">
+                                                                <img src="images/icons/success.svg" alt="" class="result__form-icon">
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="results__form-btns">
+                                                            <a href="#!" class="sec-btn-white results__form-btn" data-bs-toggle="modal" data-bs-target="#change-data">Изменить данные</a>
+                                                            <a href="#!" class="sec-btn-tr results__form-btn">Выйти из аккаунта</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-        
-                                                <div class="results__form-item">
-                                                    <h4 class="result__form-title">Контактная информация</h4>
-                                                    <div class="results__form-inp">
-                                                        <span>E-mail:</span>
-                                                        <input type="email" name="name" placeholder="dkudryshov@yandex.ru">
-                                                        <img src="images/icons/success.svg" alt="" class="result__form-icon">
+
+                                                <div class="col-lg-4">
+                                                    <div class="pc">
+                                                        <div class="data-img">
+                                                            <img src="images/comment-img.png" alt="">
+                                                        </div>
                                                     </div>
-                                                    <div class="results__form-inp">
-                                                        <span>Телефон:</span>
-                                                        <input type="number" name="name" placeholder="+7 (999) 999-99-99">
-                                                        <img src="images/icons/success.svg" alt="" class="result__form-icon">
-                                                    </div>
-                                                </div>
-        
-                                                <div class="results__form-btns">
-                                                    <a href="#!" class="sec-btn-white results__form-btn" data-bs-toggle="modal" data-bs-target="#change-data">Изменить данные</a>
-                                                    <a href="#!" class="sec-btn-tr results__form-btn">Выйти из аккаунта</a>
                                                 </div>
                                             </div>
                                         </div>

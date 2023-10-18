@@ -149,7 +149,7 @@ $(function () {
     $("#show-less").hide();
   });
 
-  // catalog analize show-more content
+  // basket catalog show-more content
   $(".cat-analize").slice(0, 5).show();
   $("#show-more").on('click', function (e) {
     e.preventDefault();
@@ -166,6 +166,25 @@ $(function () {
     $("#show-more").fadeIn('slow');
     $("#show-less").hide();
   });
+
+
+   // catalog analize show-more content
+   $(".cat-analize-block").slice(0, 5).show();
+   $("#show-more").on('click', function (e) {
+     e.preventDefault();
+     $(".cat-analize-block:hidden").slice(0, 5).slideDown();
+     if ($(".cat-analize-block:hidden").length == 0) {
+       $("#show-less").fadeIn('slow');
+       $("#show-more").hide();
+       // $("#loadMore").text('Load only the first 4');
+     }
+   });
+   $("#show-less").on('click', function (e) {
+     e.preventDefault();
+     $('.cat-analize-block:not(:lt(5))').fadeOut();
+     $("#show-more").fadeIn('slow');
+     $("#show-less").hide();
+   });
 
 
   // basket(cart) delete card

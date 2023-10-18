@@ -134,7 +134,7 @@
         <main>
             <section class="catolog-description">
                 <div class="container">
-                    <img src="./images/catolog__description-bg.png" alt="" class="catolog__description-bg">
+                    <img src="./images/catolog__description-bg.png" alt="" class="catolog__description-bg mob">
                     <div class="catolog__description-content">
                         <div class="main-search">
                             <button type="submit" class="main-search-btn">
@@ -153,49 +153,143 @@
                             </a>
 
 
-                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Подготовка
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Описание
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Интерпритация
-                                    </button>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="catolog__tab-content">
-                                        <div class="catolog__tab-content-text">
-                                            <div class="cat-tab-in">
-                                                <p>От 2 дней: 2,8-4,4 ммоль/л</p>
-                                                <p>От 1 месяца: 3,3-5,6 ммоль/л </p>
-                                                <p>От 17 лет: 4,1-5,9 ммоль/л</p>
-                                                <p>От 60 лет: 4,6-6,4 ммоль/л</p>
+                            <div class="cat-tabs">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                                    aria-selected="true">Подготовка
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                                    aria-controls="pills-profile" aria-selected="false">Описание
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                                    aria-controls="pills-contact" aria-selected="false">Интерпритация
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <div class="row tab-rov">
+                                    <div class="col-lg-6 col-6">
+            
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <div class="catolog__tab-content">
+                                                    <div class="just-text">
+                                                        <div class="text-block">
+                                                            <p>Рекомендовано сдавать кровь утром строго натощак (10-12 часов голода, чистую воду пить можно).</p>
+                                                        </div>
+                                                        <div class="text-block">
+                                                            <p>Накануне придерживаться стандартной диеты, исключить прием алкоголя.</p>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="just-btn">
+                                                        <a href="#!" class="white-btn">Вернуться</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="cat-tab-in">
-                                                <p>Согласно рекомендациям ВОЗ (1999-2013), "Диагностические критерии сахарного диабета и других нарушений гликемии":</p>
-                                                <p>Нормальный уровень глюкозы натощак: < 6,1 ммоль</p>
-                                                <p>Нормальный уровень глюкозы натощак у беременных: < 5,1 ммоль/л</p>
+            
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <div class="catolog__tab-content">
+                                                    <div class="just-text mini">
+                                                        <div class="text-block">
+                                                            <span>Биоматериал</span>
+                                                            <p class="fw-300">Кровь капиллярная</p>
+                                                        </div>
+                                                        <div class="text-block">
+                                                            <span>Метод определения</span>
+                                                            <p class="fw-300">Гексокиназный</p>
+                                                        </div>
+                                                        <div class="text-block">
+                                                            <span>Материал для исследования</span>
+                                                            <p class="fw-300">Сыворотка или плазма крови. Если нет возможности центрифугировать
+                                                                пробу через 30 минут после взятия для отделения сыворотки/плазмы от
+                                                                клеток, пробу берут в специальную пробирку, содержащую ингибитор
+                                                                гликолиза (флюорид натрия).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="just-text">
+                                                    <div class="text-block">
+                                                        <span>Краткая характеристика вещества </span>
+            
+                                                        <p class="fw-300">Источниками глюкозы для организма являются углеводы (быстрые
+                                                            и медленные), поступающие с пищей в виде сахарозы, фруктозы, мальтозы,
+                                                            лактозы, крахмала и тд.
+                                                            В организме глюкоза накапливается в виде гликогена в печени
+                                                            и при необходимости может быть синтезирована из неуглеводных субстратов
+                                                            (аминокислот, глицерола, лактата).
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <p class="fw-300">
+                                                            Поддержание содержания глюкозы в крови на определенном уровне является
+                                                            примером одного из самых совершенных механизмов регуляции гомеостаза, в
+                                                            функционировании которого участвует печень, внепеченочные ткани и
+                                                            некоторые гормоны. Инсулин обеспечивает транспорт глюкозы внутрь клеток
+                                                            и является единственным гормоном, снижающим уровень глюкозы в крови.
+                                                            Другие гормоны, такие как глюкагон, кортизол, адреналин, гормоны
+                                                            щитовидной железы, гормон роста вызывают повышение ее уровня
+                                                            в крови, проявляя контринсулярный эффект. В результате действия
+                                                            регуляторных механизмов содержание глюкозы в крови в норме колеблется в
+                                                            узком диапазоне значений.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <p class="fw-300">
+                                                            Главным лабораторным тестом для оценки углеводного обмена считается
+                                                            определение уровня глюкозы в крови натощак. Повышенное её содержание
+                                                            называется гипергликемией и может являться симптомом сахарного диабета.
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="just-btn">
+                                                    <a href="#!" class="white-btn">Вернуться</a>
+                                                </div>
                                             </div>
-                                            <div class="cat-tab-in">
-                                                <p>Диагностические критерии сахарного диабета: </p>
-                                                <p>уровень глюкозы натощак: ? 7,0 ммоль/л</p>
-                                                <p>уровень глюкозы при случайном определении: ? 11,1 ммоль/л</p>
+            
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                <div class="catolog__tab-content">
+                                                    <div class="text-block-wrap">
+                                                        <div class="just-text">
+                                                            <div class="text-block">
+                                                                <p>От 2 дней: 2,8-4,4 ммоль/л </p>
+                                                                <p>От 1 месяца: 3,3-5,6 ммоль/л</p>
+                                                                <p>От 17 лет: 4,1-5,9 ммоль/л</p>
+                                                                <p>От 60 лет: 4,6-6,4 ммоль/л</p>
+                                                            </div>
+                                                            <div class="text-block">
+                                                                <p>Согласно рекомендациям ВОЗ (1999-2013), "Диагностические критерии сахарного диабета и  нарушений гликемии": Нормальный уровень глюкозы натощак: < 6,1 ммоль Нормальный уровень глюкозы натощак у беременных: < 5,1 ммоль/л </p>
+                                                            </div>
+                                                            <div class="text-block">
+                                                                <p>Диагностические критерии сахарного диабета: уровень глюкозы натощак: ? 7,0 ммоль/л уровень глюкозы при случайном определении: ? 11,1 ммоль/л</p>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="just-btn">
+                                                            <a href="#!" class="white-btn">Вернуться</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
+                                    </div>
+    
+                                    <div class="col-lg-5 col-6">
                                         <div class="catolog__tab-content-box">
                                             <div class="catolog__tab-box-price">
                                                 <div class="catolog__tab-box-item">
@@ -208,169 +302,23 @@
                                                 <div class="catolog__tab-box-item">
                                                     <p>Цена: <b>485₽</b></p>
                                                 </div>
-
+    
                                             </div>
-
+    
                                             <div class="catolog__tab-btns">
                                                 <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
                                                     результатов анализа</a>
                                                 <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
                                             </div>
-
+                                        </div>
+                                        
+                                        <div class="pc">
+                                            <div class="tab-img">
+                                                <img src="images/tab-img.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <div class="catolog__tab-content">
-                                        <div class="catolog__tab-text-wrap">
-                                            <div class="catolog__tab-text">
-                                                <span>Биоматериал</span>
-                                                <p>Кровь капиллярная</p>
-                                            </div>
-                                            <div class="catolog__tab-text">
-                                                <span>Метод определения</span>
-                                                <p>Гексокиназный</p>
-                                            </div>
-                                            <div class="catolog__tab-text">
-                                                <span>Материал для исследования</span>
-                                                <p>Сыворотка или плазма крови. Если нет возможности центрифугировать
-                                                    пробу через 30 минут после взятия для отделения сыворотки/плазмы от
-                                                    клеток, пробу берут в специальную пробирку, содержащую ингибитор
-                                                    гликолиза (флюорид натрия).
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="catolog__tab-content-box">
-                                            <div class="catolog__tab-box-price">
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Срок исполнения: <span>1 к. д.</span></p>
-                                                </div>
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Цена: <b>325₽</b></p>
-                                                    <span>взятие биоматериала <b>+ 160₽</b></span>
-                                                </div>
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Цена: <b>485₽</b></p>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="catolog__tab-btns">
-                                                <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
-                                                    результатов анализа</a>
-                                                <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="catolog__tab-bottom-text">
-                                        <div class="catolog__tab-text">
-                                            <span>Краткая характеристика вещества </span>
-
-                                            <p>Источниками глюкозы для организма являются углеводы (быстрые
-                                                и медленные), поступающие с пищей в виде сахарозы, фруктозы, мальтозы,
-                                                лактозы, крахмала и тд.
-                                                В организме глюкоза накапливается в виде гликогена в печени
-                                                и при необходимости может быть синтезирована из неуглеводных субстратов
-                                                (аминокислот, глицерола, лактата).
-                                            </p>
-                                        </div>
-                                        <div class="catolog__tab-text">
-                                            <p>
-                                                Поддержание содержания глюкозы в крови на определенном уровне является
-                                                примером одного из самых совершенных механизмов регуляции гомеостаза, в
-                                                функционировании которого участвует печень, внепеченочные ткани и
-                                                некоторые гормоны. Инсулин обеспечивает транспорт глюкозы внутрь клеток
-                                                и является единственным гормоном, снижающим уровень глюкозы в крови.
-                                                Другие гормоны, такие как глюкагон, кортизол, адреналин, гормоны
-                                                щитовидной железы, гормон роста вызывают повышение ее уровня
-                                                в крови, проявляя контринсулярный эффект. В результате действия
-                                                регуляторных механизмов содержание глюкозы в крови в норме колеблется в
-                                                узком диапазоне значений.
-                                            </p>
-                                        </div>
-                                        <div class="catolog__tab-text">
-                                            <p>
-                                                Главным лабораторным тестом для оценки углеводного обмена считается
-                                                определение уровня глюкозы в крови натощак. Повышенное её содержание
-                                                называется гипергликемией и может являться симптомом сахарного диабета.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <div class="catolog__tab-content">
-                                        <div class="catolog__tab-text-wrap">
-                                            <p>
-                                                <span class="catolog__tab-content-text">От 2 дней: 2,8-4,4 ммоль/л;
-                                                </span>
-                                                <span class="catolog__tab-content-text">От 1 месяца: 3,3-5,6 ммоль/л;
-                                                </span>
-                                                <span class="catolog__tab-content-text">От 17 лет: 4,1-5,9
-                                                    ммоль/л;</span>
-                                                <span class="catolog__tab-content-text">От 60 лет: 4,6-6,4
-                                                    ммоль/л;</span>
-                                            </p>
-                                            <p class="catolog__tab-content-text">
-                                                Рекомендовано сдавать кровь утром строго натощак (10-12 часов голода,
-                                                чистую воду пить можно). <br>
-                                                Накануне придерживаться стандартной диеты, исключить прием алкоголя.
-                                            </p>
-                                            <p>
-                                                <span class="catolog__tab-content-text">Нормальный уровень глюкозы
-                                                    натощак: </span>
-                                                <span class="catolog__tab-content-text">
-                                                    < 6,1 ммоль;</span>
-                                            </p>
-                                            <p>
-                                                <span class="catolog__tab-content-text">Нормальный уровень глюкозы
-                                                    натощак у беременных: </span>
-                                                <span class="catolog__tab-content-text">
-                                                    < 5,1 ммоль/л </span>
-                                            </p>
-                                            <p class="catolog__tab-content-text">
-                                                Диагностические критерии сахарного диабета:
-                                            </p>
-                                            <p>
-                                                <span class="catolog__tab-content-text">уровень глюкозы натощак:</span>
-                                                <span class="catolog__tab-content-text">? 7,0 ммоль/л;</span>
-                                            </p>
-                                            <p>
-                                                <span class="catolog__tab-content-text">уровень глюкозы при случайном
-                                                    определении: </span>
-                                                <span class="catolog__tab-content-text">? 11,1 ммоль/л</span>
-                                            </p>
-                                        </div>
-                                        <div class="catolog__tab-content-box">
-                                            <div class="catolog__tab-box-price">
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Срок исполнения: <span>1 к. д.</span></p>
-                                                </div>
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Цена: <b>325₽</b></p>
-                                                    <span>взятие биоматериала <b>+ 160₽</b></span>
-                                                </div>
-                                                <div class="catolog__tab-box-item">
-                                                    <p>Цена: <b>485₽</b></p>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="catolog__tab-btns">
-                                                <a href="#!" class="catolog__tab-btn sec-btn-white">Скачать примеры
-                                                    результатов анализа</a>
-                                                <a href="#!" class="addToCart catolog__tab-btn sec-btn-white"> В корзину</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="return-btn">
-                                <a href="#!" class="return-link white-btn">Вернуться</a>
                             </div>
                         </div>
 
@@ -381,64 +329,171 @@
                             </div>
                             
                             <div class="row cat-rov">
-                                <div class="col-lg-6 col-12">
-                                    <div class="catolog__analiz-item">
-                                        <div class="catolog__analiz-item-info">
-                                            <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
-                                            <div class="catolog__analiz-price">
-                                                <span>Срок<b>2 к. д.</b></span>
-                                                <span>Стоимость<b> <span>565₽</span>396 ₽</b></span>
+                                <div class="col-lg-8 cat-an-pro">
+                                    <div class="cat-analize-in">
+                                        <div class="cat-analize-content">
+                                            <div class="cat-an-name">
+                                                <span class="pc">Исследование</span>
+                                                <p class="cat-analize-text">Взятие крови</p>
+                                            </div>
+                                            <div class="cat-analize-price">
+                                                <div class="price-in">
+                                                    <span>Срок</span>
+                                                    <b>2 к. д.</b>
+                                                </div>
+                                                <div class="price-in">
+                                                    <span>Стоимость</span>
+                                                    <b><span>565₽</span>396 ₽</b>
+                                                </div>
+                                            </div>
+        
+                                            <div class="pc">
+                                                <div class="btn-block">
+                                                    <button type="button" class="addToCart cat-analize-btn">
+                                                        <img src="./images/icons/shoppingcart.svg" alt="">
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="addToCart catolog__analiz-shop"><img src="./images/icons/shoppingcart.svg" alt=""></button>
+                                        <div class="mob">
+                                            <div class="btn-block">
+                                                <button type="button" class="addToCart cat-analize-btn">
+                                                    <img src="./images/icons/shoppingcart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="catolog__analiz-item">
-                                        <div class="catolog__analiz-item-info">
-                                            <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
-                                            <div class="catolog__analiz-price">
-                                                <span>Срок<b>2 к. д.</b></span>
-                                                <span>Стоимость<b> <span>565₽</span>396 ₽</b></span>
+                                    <div class="cat-analize-in">
+                                        <div class="cat-analize-content">
+                                            <div class="cat-an-name">
+                                                <span class="pc">Исследование</span>
+                                                <p class="cat-analize-text">Взятие крови</p>
+                                            </div>
+                                            <div class="cat-analize-price">
+                                                <div class="price-in">
+                                                    <span>Срок</span>
+                                                    <b>2 к. д.</b>
+                                                </div>
+                                                <div class="price-in">
+                                                    <span>Стоимость</span>
+                                                    <b><span>565₽</span>396 ₽</b>
+                                                </div>
+                                            </div>
+        
+                                            <div class="pc">
+                                                <div class="btn-block">
+                                                    <button type="button" class="addToCart cat-analize-btn">
+                                                        <img src="./images/icons/shoppingcart.svg" alt="">
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="addToCart catolog__analiz-shop"><img src="./images/icons/shoppingcart.svg" alt=""></button>
+                                        <div class="mob">
+                                            <div class="btn-block">
+                                                <button type="button" class="addToCart cat-analize-btn">
+                                                    <img src="./images/icons/shoppingcart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="catolog__analiz-item">
-                                        <div class="catolog__analiz-item-info">
-                                            <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
-                                            <div class="catolog__analiz-price">
-                                                <span>Срок<b>2 к. д.</b></span>
-                                                <span>Стоимость<b> <span>565₽</span>396 ₽</b></span>
+                                    <div class="cat-analize-in">
+                                        <div class="cat-analize-content">
+                                            <div class="cat-an-name">
+                                                <span class="pc">Исследование</span>
+                                                <p class="cat-analize-text">Взятие крови</p>
+                                            </div>
+                                            <div class="cat-analize-price">
+                                                <div class="price-in">
+                                                    <span>Срок</span>
+                                                    <b>2 к. д.</b>
+                                                </div>
+                                                <div class="price-in">
+                                                    <span>Стоимость</span>
+                                                    <b><span>565₽</span>396 ₽</b>
+                                                </div>
+                                            </div>
+        
+                                            <div class="pc">
+                                                <div class="btn-block">
+                                                    <button type="button" class="addToCart cat-analize-btn">
+                                                        <img src="./images/icons/shoppingcart.svg" alt="">
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="addToCart catolog__analiz-shop"><img src="./images/icons/shoppingcart.svg" alt=""></button>
+                                        <div class="mob">
+                                            <div class="btn-block">
+                                                <button type="button" class="addToCart cat-analize-btn">
+                                                    <img src="./images/icons/shoppingcart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="catolog__analiz-item">
-                                        <div class="catolog__analiz-item-info">
-                                            <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
-                                            <div class="catolog__analiz-price">
-                                                <span>Срок<b>2 к. д.</b></span>
-                                                <span>Стоимость<b> <span>565₽</span>396 ₽</b></span>
+                                    <div class="cat-analize-in">
+                                        <div class="cat-analize-content">
+                                            <div class="cat-an-name">
+                                                <span class="pc">Исследование</span>
+                                                <p class="cat-analize-text">Взятие крови</p>
+                                            </div>
+                                            <div class="cat-analize-price">
+                                                <div class="price-in">
+                                                    <span>Срок</span>
+                                                    <b>2 к. д.</b>
+                                                </div>
+                                                <div class="price-in">
+                                                    <span>Стоимость</span>
+                                                    <b><span>565₽</span>396 ₽</b>
+                                                </div>
+                                            </div>
+        
+                                            <div class="pc">
+                                                <div class="btn-block">
+                                                    <button type="button" class="addToCart cat-analize-btn">
+                                                        <img src="./images/icons/shoppingcart.svg" alt="">
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="addToCart catolog__analiz-shop"><img src="./images/icons/shoppingcart.svg" alt=""></button>
+                                        <div class="mob">
+                                            <div class="btn-block">
+                                                <button type="button" class="addToCart cat-analize-btn">
+                                                    <img src="./images/icons/shoppingcart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="catolog__analiz-item">
-                                        <div class="catolog__analiz-item-info">
-                                            <p class="catolog__analiz-text">Алюминий, ногти (Iron, nails; Fe)</p>
-                                            <div class="catolog__analiz-price">
-                                                <span>Срок<b>2 к. д.</b></span>
-                                                <span>Стоимость<b> <span>565₽</span>396 ₽</b></span>
+                                    <div class="cat-analize-in">
+                                        <div class="cat-analize-content">
+                                            <div class="cat-an-name">
+                                                <span class="pc">Исследование</span>
+                                                <p class="cat-analize-text">Взятие крови</p>
+                                            </div>
+                                            <div class="cat-analize-price">
+                                                <div class="price-in">
+                                                    <span>Срок</span>
+                                                    <b>2 к. д.</b>
+                                                </div>
+                                                <div class="price-in">
+                                                    <span>Стоимость</span>
+                                                    <b><span>565₽</span>396 ₽</b>
+                                                </div>
+                                            </div>
+        
+                                            <div class="pc">
+                                                <div class="btn-block">
+                                                    <button type="button" class="addToCart cat-analize-btn">
+                                                        <img src="./images/icons/shoppingcart.svg" alt="">
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="addToCart catolog__analiz-shop"><img src="./images/icons/shoppingcart.svg" alt=""></button>
+                                        <div class="mob">
+                                            <div class="btn-block">
+                                                <button type="button" class="addToCart cat-analize-btn">
+                                                    <img src="./images/icons/shoppingcart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
