@@ -128,7 +128,7 @@ $(function () {
     window.addEventListener('resize', mediaSize, false);
 
   })(jQuery);
-  
+
 
 
   // comment show-more content
@@ -168,28 +168,40 @@ $(function () {
   });
 
 
-   // catalog analize show-more content
-   $(".cat-analize-block").slice(0, 5).show();
-   $("#show-more").on('click', function (e) {
-     e.preventDefault();
-     $(".cat-analize-block:hidden").slice(0, 5).slideDown();
-     if ($(".cat-analize-block:hidden").length == 0) {
-       $("#show-less").fadeIn('slow');
-       $("#show-more").hide();
-       // $("#loadMore").text('Load only the first 4');
-     }
-   });
-   $("#show-less").on('click', function (e) {
-     e.preventDefault();
-     $('.cat-analize-block:not(:lt(5))').fadeOut();
-     $("#show-more").fadeIn('slow');
-     $("#show-less").hide();
-   });
+  // catalog analize show-more content
+  $(".cat-analize-block").slice(0, 5).show();
+  $("#show-more").on('click', function (e) {
+    e.preventDefault();
+    $(".cat-analize-block:hidden").slice(0, 5).slideDown();
+    if ($(".cat-analize-block:hidden").length == 0) {
+      $("#show-less").fadeIn('slow');
+      $("#show-more").hide();
+      // $("#loadMore").text('Load only the first 4');
+    }
+  });
+  $("#show-less").on('click', function (e) {
+    e.preventDefault();
+    $('.cat-analize-block:not(:lt(5))').fadeOut();
+    $("#show-more").fadeIn('slow');
+    $("#show-less").hide();
+  });
 
 
   // basket(cart) delete card
   $('.delete-btn').on('click', function () {
     $(this).parent().parent().addClass('d-none');
+  });
+
+  $('.status-opener').on('click', function () {
+    $(this).toggleClass('active');
+    $('.status-menu').toggleClass('active');
+  });
+  $(document).mouseup(function (e) {
+    var div = $(".status-menu, .status-opener");
+    if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+      div.removeClass('active');
+    }
   });
 
 
@@ -216,10 +228,10 @@ $(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // speed: 1000,
-    // autoplay: {
-    //   delay: 1000,
-    // },
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
   });
 
 
@@ -228,9 +240,9 @@ $(function () {
     slidesPerView: 6,
     spaceBetween: 32,
     speed: 1000,
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     breakpoints: {
       300: {
         slidesPerView: 3.4,
@@ -264,9 +276,9 @@ $(function () {
       clickable: true,
     },
     speed: 1000,
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     breakpoints: {
       300: {
         slidesPerView: 1.2,

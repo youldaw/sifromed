@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>ЦИФРОЛАБ</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+    }
+
+    a, p, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .ser-container {
+        max-width: 1360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sertificate-wrapper {
+        padding: 100px 50px;
+        font-family: 'Jost', sans-serif;
+        color: #333333;
+        background-image: url(./images/sertificate-top-bg.svg);
+        background-repeat: no-repeat;
+        background-position: top -580px center;
+        background-size: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .sertificate-block {
+        padding-bottom: 400px;
+        border-top: 5px solid #6600cc;
+        border-bottom: 5px solid #6600cc;
+    }
+    .sertificate-block .pink-color {
+        color: #6600cc;
+    }
+    .sertificate-block .sertificate-in {
+        display: flex;
+        align-items: flex-start;
+        gap: 0 30px;
+    }
+    .sertificate-block .sertificate-title p {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 20px 0 80px;
+    }
+    .sertificate-block .ser-left {
+        max-width: 320px;
+        width: 100%;
+    }
+    .sertificate-block .ser-in-title {
+        margin-bottom: 40px;
+    }
+    .sertificate-block .ser-in-title p {
+        font-size: 38px;
+        font-weight: 300;
+    }
+    .sertificate-block .ser-id span {
+        display: block;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .sertificate-block .ser-in-address p {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .sertificate-block .ser-data {
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0;
+        margin-bottom: 40px;
+    }
+    .sertificate-block .ser-data p span,
+    .sertificate-block .ser-data p a,
+    .sertificate-block .ser-data p {
+        font-size: 20px;
+    }
+    .sertificate-block .ser-list {
+        margin-bottom: 40px;
+    }
+    .sertificate-block .ser-list p {
+        font-size: 20px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+    .sertificate-block a {
+        color: #6600cc;
+        text-decoration: underline;
+    }
+    .bottom-bg {
+        position: absolute;
+        bottom: -55%;
+        left: 0;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    @media screen and (min-width: 1921px) {
+        .bottom-bg {
+            bottom: -80%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .sertificate-block .sertificate-in {
+            flex-direction: column;
+        }
+        .sertificate-wrapper {
+            padding: 50px 20px;
+        }
+        .sertificate-block .ser-in-title p {
+            font-size: 26px;
+        }
+        .sertificate-block .ser-in-title p br {
+            display: none;
+        }
+        .sertificate-block .ser-id span {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        .sertificate-block .ser-in-address p {
+            font-size: 24px;
+        }
+        .sertificate-block .ser-in-title {
+            margin-bottom: 30px;
+        }
+        .ser-right {
+            margin-top: 50px;
+        }
+        .sertificate-block .ser-list p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .sertificate-block .ser-data p span,
+        .sertificate-block .ser-data p a,
+        .sertificate-block .ser-data p {
+            font-size: 18px;
+        }
+        .sertificate-block .sertificate-title p {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+    }
+
+    /* table style */
+    .table-custom {
+        margin-top: 80px;
+    }
+    .table-custom .table-title p {
+        font-size: 38px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    .table-custom table {
+        width: 100%;
+        margin: 0;
+        border-spacing: 0;
+        border: 1px solid #ccc;
+    }
+    .table-block table thead tr th {
+        font-weight: 700;
+        background: #6600cc;
+        color: #fff;
+    }
+    .table-block table tr th,
+    .table-block table tr td {
+        padding: 20px 15px;
+        font-size: 20px;
+        text-align: left;
+        vertical-align: top;
+        border: 2px solid #ccc;
+    }
+    .table-block table tbody tr td:last-child {
+        text-align: right;
+    }
+    .table-block table tbody tr:nth-child(even) {
+        background: #6600cc;
+        color: #fff;
+    }
+    .table-block table tbody tr:nth-child(odd) td {
+        border-right: 2px dashed #ccc;
+    }
+    .table-block table tbody tr:nth-child(odd) td:last-child {
+        border-right: 2px solid #ccc;
+    }
+    .table-block table tr td.fw-700 {
+        font-weight: 700;
+    }
+    .table-block table tfoot td {
+        border-top: 2px solid #000;
+    }
+</style>
+
+<body>
+	<div class="sertificate-wrapper">
+        <img src="images/sertificate-top-bg.svg" alt="" class="bottom-bg">
+
+		<div class="ser-container">
+            <div class="sertificate-block">
+
+                <div class="sertificate-title">
+                    <p class="pink-color">ЦифроЛаб</p>
+                </div>
+
+                <div class="sertificate-in">
+                    <div class="ser-left">
+                        <div class="ser-in-title">
+                            <p>СЕРТИФИКАТ</p>
+                        </div>
+
+                        <div class="ser-id">
+                            <span class="pink-color"># 6118726553</span>
+                        </div>
+                        <div class="ser-in-title">
+                            <p>АДРЕС <br> МЕД-ОФИСА</p>
+                        </div>
+                        <div class="ser-in-address">
+                            <p>Ростов-на-Дону, <br> ул.Вятская, д.102/102</p>
+                        </div>
+                    </div>
+
+                    <div class="ser-right">
+                        <div class="ser-in-title">
+                            <p>ДАННЫЕ ПАЦИЕНТА</p>
+                        </div>
+
+                        <div class="ser-data">
+                            <p>ФИО: <span class="pink-color">Глухова Анастасия Алексеевна</span></p>
+                            <p>Регион оформления: <span class="pink-color">Ростов-на-Дону</span></p>
+                            <p>Дата рождения: <span class="pink-color">18.10.1998</span></p>
+                            <p>Номер телефона: <span class="pink-color">79278205790</span></p>
+                            <p>E-mail: <a href="gluhova9898@mail.ru" class="pink-color">gluhova9898@mail.ru</a></p>
+                            <p>Пол: <span class="pink-color">Женский</span></p>
+                        </div>
+
+                        <div class="ser-instruction">
+                            <div class="ser-in-title">
+                                <p>ИНСТРУКЦИЯ</p>
+                            </div>
+
+                            <div class="ser-list">
+                                <p>1. Посетите выбранный медицинский офис «KDL» с 07:00 до 18:00 по
+                                    адресу - <span class="pink-color">Ростов-на-Дону, ул.Вятская, д.102/102</span></p>
+                                <p>2. Посетите выбранный медицинский офис, подойдите к стойке
+                                    администратора, скажите, что вы пациент "Цифролаб", покажите этот
+                                    сертификат или назовите код сертификата: <span class="pink-color"> N° 6118726553</span></p>
+                                <p>3. Актуальный статус результатов вы можете отслеживать в своем личном
+                                    кабинете на сайте <a href="https://1lab.plus">1lab.plus</a> . Результаты анализов поступят в ваш личный
+                                    кабинет и на электронную почту <span class="pink-color">gluhova9898@mail.ru</span> после полной
+                                    готовности ваших анализов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table-custom">
+                <div class="table-title">
+                    <p>КОРЗИНА АНАЛИЗОВ</p>
+                </div>
+
+                <div class="table-block">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Код анализа</th>
+                                <th>Описание</th>
+                                <th>Календарных <br> дней</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="fw-700">Дополнительные услуги</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Взятие крови</td>
+                                <td></td>
+                                <td>102.00</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>102.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+
+</html>

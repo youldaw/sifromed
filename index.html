@@ -814,7 +814,7 @@
 						<div class="modal__mini-content">
 							<h4 class="modal__mini-title">Регистрация прошла успешно!</h4>
 							<img src="./images/modal-mini-img1.svg" alt="">
-							<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
+							<button class="modal__mini-link" data-bs-dismiss="modal">Вернуться к корзине</button>
 						</div>
 					</div>
 				</div>
@@ -823,19 +823,28 @@
 	</div>
 
 	<!-- MODAL Оплата прошла успешно! -->
-	<div class="modal__mini modal__mini2">
-		<div class="modal fade" id="modalMini2" aria-hidden="true" aria-labelledby="modalMiniLabel"
-			tabindex="-1">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="modal__mini-content">
-							<h4 class="modal__mini-title">Оплата прошла успешно!</h4>
-							<img src="./images/modal-mini-img2.svg" alt="">
-							<div class="modal__mini-links">
-								<a href="#!" class="modal__mini-link">Перейти в личный кабинет</a>
-								<button class="modal__mini-link" data-bs-dismiss="modal">Далее</button>
+	<div class="modal fade success-payment" id="modalMini2" aria-hidden="true" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<img src="images/modal-body-bg.png" alt="" class="body-img">
+				<div class="modal-body">
+					<div class="payment-body">
+						<div class="payment-in">
+							<div class="payment-text">
+								<p>Оплата прошла успешно!</p>
+								<span>Дальнейшие действия отслеживай в личном кабинете</span>
 							</div>
+							<div class="mob payment-img">
+								<img src="images/success-payment-img.png" alt="">
+							</div>
+							<div class="payment-btns">
+								<a href="#!" class="white-link">Дальнейшие шаги</a>
+								<a href="#!" class="blue-link">Перейти в личный кабинет</a>
+							</div>
+						</div>
+
+						<div class="pc payment-img">
+							<img src="images/success-payment-img.png" alt="">
 						</div>
 					</div>
 				</div>
